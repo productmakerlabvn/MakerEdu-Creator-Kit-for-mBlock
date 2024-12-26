@@ -33,16 +33,16 @@ MakerLab có mở các Workshop "Hướng dẫn lập trình Robotics cho trẻ 
 
 ## Các bài thực hành
 
-- Bài 1: Điều khiển bật tắt đèn Led
-- Bài 2: Điều khiển độ sáng đèn Led
-- Bài 3: Chống trộm ngăn kéo
-- Bài 4: Đèn ngủ thông minh
-- Bài 5: Đồng hồ đếm ngược
-- Bài 6: Cổng tự động
-- Bài 7: Cảnh báo va chạm
-- Bài 8: Radar phát hiện xâm nhập
-- Bài 9: Phát nhạc với với còi Buzzer
-- Bài 10: Đàn Piano không chạm
+- [Bài 1: Điều khiển bật tắt đèn Led](/ex/less01/README.md)
+- [Bài 2: Điều khiển độ sáng đèn Led](/ex/less02/README.md)
+- [Bài 3: Chống trộm ngăn kéo](/ex/less03/README.md)
+- [Bài 4: Đèn ngủ thông minh](/ex/less04/README.md)
+- [Bài 5: Đồng hồ đếm ngược](/ex/less05/README.md)
+- [Bài 6: Cổng tự động](/ex/less06/README.md)
+- [Bài 7: Cảnh báo va chạm](/ex/less07/README.md)
+- [Bài 8: Radar phát hiện xâm nhập](/ex/less08/README.md)
+- [Bài 9: Phát nhạc với với còi Buzzer](/ex/less09/README.md)
+- [Bài 10: Đàn Piano không chạm](/ex/less10/README.md)
 
 ## Lời giải các bài tập thực hành
 
