@@ -1,188 +1,109 @@
-# Bài 6: Hiển thị thông tin lên màn hình LCD với Arduino (Library) - MakerEdu Starter Kit for Arduino
+# Bài 6: Cổng tự động - MakerEdu Creator Kit for mBlock
 
 ## Mô tả dự án
 
-Trong bài này chúng ta sẽ cùng tìm hiểu về chuẩn giao tiếp I2C được hỗ trợ trên Arduino với [Mạch hiển thị MKE-M07 LCD1602 I2C module](https://makerlab.vn/mkem07), sơ bộ chuẩn I2C là sự kết hợp của hai chân tín hiệu Digital là SDA (A4) và SCL (A5), các bạn có thể tìm hiểu thêm về [chuẩn giao tiếp I2C tại đây](/ex/less02/A_D_signal_and_interface/README.md).
+Trong bài này bạn sẽ làm quen với một cảm biến mới, là cảm biến siêu âm.
 
-Với việc nhập xuất các tín hiệu đơn giản như Digital và Analog như ở các bài trước các bạn có thể sử dụng các hàm có sẵn của Arduino, tuy nhiên với các thiết bị sử dụng chuẩn giao tiếp phức tạp hơn các bạn cần phải cài đặt thêm các bộ thư viện hổ trợ của thiết bị (Library) để có thể sử dụng.
+Cảm biến này có thể đo khoảng cách giữa vật thể phía trước đến cảm biến, bằng cách dùng nguyên lý phản xạ sóng.
 
-![](/ex/less06/image/01_1050px-I2C-SDA-SCL-01.jpg)
-Kết nối giữa các thiết bị sử dụng chuẩn giao tiếp I2C.
+Kết hợp với động cơ Servo học ở bài trước. Bạn hoàn toàn có thể làm được một bộ mở cửa tự động.
 
-## Video
-
-[![](/ex/less06/image/02_video_less_06.png)](https://youtu.be/LT-ezKcKiDc)
+Khi có người hay vật đến gần cửa, Servo sẽ quay là cửa mở tự động.
 
 ## Các bước thực hiện
 
 ### Danh sách thiết bị
 
-- [1x Mạch Vietduino Uno (Arduino Uno Compatible)](https://makerlab.vn/vuno)
-- [1x Mạch MakerEdu Shield for Vietduino](https://makerlab.vn/vietduinosd)
-- [1x Cáp USB-C](https://hshop.vn/cap-usb-type-c)
-- [1x Mạch hiển thị MKE-M07 LCD1602 I2C module](https://makerlab.vn/mkem07)
+- 1x [Mạch MakerEdu Creator](https://www.makerlab.vn/creator)
+- 1x [Cáp USB-C](https://hshop.vn/cap-usb-type-c)
+- 1x [Cảm biến siêu âm MKE-S01 Ultrasonic Distance Sensor](https://makerlab.vn/mkes01)
+- 1x [Động cơ RC Servo](https://hshop.vn/dong-co-rc-servo-9g)
 
 ### Chuẩn bị trước dự án
 
-- Kết nối mạch MakerEdu Shield với mạch Vietduino Uno [theo hướng dẫn](https://makerlab.vn/vietduinosd).
-- Kết nối mạch Vietduino Uno với máy tính qua cáp USB-C sẽ thấy đèn nguồn (ON) trên mạch MakerEdu Shield phát sáng, cài đặt Driver và cấu hình mạch trên phần mềm Arduino [theo hướng dẫn tại đây](https://makerlab.vn/vuno).
-- Tìm hiểu về cấu trúc của một chương trình trên phầm mềm Arduino và ngôn ngữ lập trình Arduino tại đây.
+- Tải và cài đặt phần mềm mBlock theo hướng dẫn **[tại đây]**.
+- Tải và cài đặt Driver, cấu hình cho Mạch MakerEdu Creator trên phần mềm mBlock theo hướng dẫn **[tại đây]**.
+- Tải và cài đặt Extension MakerEdu Hardware trên phần mềm mblock theo hướng dẫn **[tại đây]**.
+- Kết nối mạch MakerEdu Creator với máy tính qua cáp USB-C sẽ thấy đèn nguồn (PWR) trên mạch phát sáng.
+- Hiểu cấu trúc của một chương trình trên phầm mềm mBlock và **"ngôn ngữ lập trình kéo thả khối"** theo hướng dẫn **[tại đây]**.
 
-![](/ex/less06/image/03_connect.jpg)
-Kết nối mạch Vietduino Uno + MakerEdu Shield với máy tính
+### Sơ đồ kết nối
 
-Cài đặt bộ thư viện (Library)
-Tải và cài đặt bộ thư viện [LiquidCrystal_I2C](https://github.com/makerlabvn/LiquidCrystal_I2C) theo [hướng dẫn tại đây]().
+| MakerEdu Creator | Devices              |
+|------------------|----------------------|
+| Port (D3+D2)     | Cảm biến Siêu âm     |
+| Port D10         | Động cơ RC Servo     |
+
+### Kết nối Servo đúng cách
+
+Trên mạch MakerEdu Creator bạn tìm đến cụm chân cắm Servo có 3 màu (vàng - đỏ - đen) và kết nối như sau:
+
+- Dây cam → chân vàng (S)
+- Dây đỏ → chân đỏ (+)
+- Dây đen → chân đen (-)
 
 ### Chương trình
 
-Mở phần mềm **IDE Arduino** và tạo một chương trình **(Sketch)** mới.
-Copy đoạn code sau vào chương trình và tiến nạp chương trình (Upload) theo [hướng dẫn tại đây]().
+- Download file code **"Bai_6.mblock"**.
+- Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
+- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
 
-```ino
-// Library Example / MKE-M07 LCD1602 I2C / MakerEdu Starter Kit for Arduino
-/*-----------------------------------------------------*/
+#### Blocks Devices
 
-// Thêm bộ thư viện LCD LiquidCrystal_I2C
+![Creator mBlock Bai 6 1](/ex/less06/image/825px-Creator_mBlock_Bai_6_1.png)
 
-# include <LiquidCrystal_I2C.h>
+### Giải thích code
 
-// Khởi tạo màn hình MKE-M07 LCD1602 I2C với đối tượng là "lcd1"
-LiquidCrystal_I2C lcd1(0x27,16,2);
-// Cài đặt địa chỉ I2C là 0x27
-// Mỗi dòng 16 ký tự
-// 2 dòng hiển thị
+Vai trò của biến **"count"**, **"min"** và **"max"**:
 
-// Taọ biến đếm kiểu số nguyên count
-int count = 0;
+Chương trình này hoạt động chủ chốt dựa trên biến **"count"**. Đây là biến đếm để ra quyết định có cho Servo mở cửa hay đóng cửa.
+Giới hạn của biến được thiết đặt bởi biến **"max"** và **"min"**. Trong đó **"max"** là 10 và **"min"** là 1.
+Nếu **"count"** chạm tới ngưỡng trên, bằng **"max"**. Bo mạch sẽ điều khiển Servo quay góc 90º, làm mở cửa.
+Ngược lại, **"count"** chạm tới ngưỡng dưới, bằng **"min"**. Bo mạch sẽ điều khiển Servo quay góc 0º, làm đóng cửa.
 
-/*-----------------------------------------------------*/
+Chương trình hoạt động:
 
-void setup()
-{
-  // Khởi động màn hình LCD
-  lcd1.init();
-  // Xóa toàn bộ nội dung trên màn hình LCD (nếu có)
-  lcd1.clear();
-  // Bật đèn nền màn hình LCD
-  lcd1.backlight();
+Đầu tiên, khi bo mạch mới khởi động, có 3 khối được thực hiện một lần trước khi bước vào khối **[forever]**.
 
-  // Tại vị trí cột 0 dòng 0, cho in nội dung...
-  lcd1.setCursor(0, 0);
-  lcd1.print("Hello World ^^");
-  // Tại vị trí cột 0 dòng 1, cho in nội dung...
-  lcd1.setCursor(0, 1);
-  lcd1.print("Lets Start!");
-  // Chờ 3 giây
-  delay(3000);
-}
+- Tạo ra một biến tên **"max"** và lưu giá trị 10.
+- Tạo ra một biến tên **"min"** và lưu giá trị 1.
+- Điều khiển Servo ở chân D10 quay đến góc 0º.
 
-/*-----------------------------------------------------*/
+Bên trong khối **[forever]**.
 
-void loop()
-{
-  // Xóa màn hình
-  lcd1.clear();
-   // Tại vị trí cột 0 dòng 0, cho in nội dung...
-  lcd1.setCursor(0, 0);
-  lcd1.print("MakerEDU");
-  // Tại vị trí cột 0 dòng 1, cho in nội dung...
-  lcd1.setCursor(0, 1);
-  lcd1.print("Starter Kit");
+- Đầu tiên, bo mạch đọc giá trị khoảng cách từ cảm biến Siêu âm ở cụm chân D3+D2 và cho lưu vào biến **"distance"**. Nhân vật Panda sẽ nói bạn biết giá trị này.
+- Kế tiếp dùng khối **[constrain...]** để lọc giá trị biến **"distance"**, đảm bảo giá trị chỉ dao động trong khoảng từ **"5cm đến 50cm"**.
+- Sau đó thực hiện khối **[check]** để thay đổi giá trị biến **"count"** → Đây là khối chức năng do người dùng tự lập trình.
 
-  // Chờ 3 giây
-  delay(3000);
-  // Xóa màn hình
-  lcd1.clear();
+### Tính năng "My Blocks" trong mBlock
 
-  //Cho in số đếm ngược từ 5-0
-  for (count = 5; count >= 0; count--)
-  {
-    // Tại vị trí cột 0 dòng 0, cho in nội dung...
-    lcd1.setCursor(0, 0);
-    lcd1.print("Count:");
-    // In "số đếm" tại vị trí cột 7 dòng 0
-    lcd1.setCursor(7, 0);
-    lcd1.print(count);
-    // Đợi 1s để đếm tiếp
-    delay(1000);
-  }
-  //Hiển thị thông báo sau khi đếm xong...
-  lcd1.setCursor(0, 1);
-  lcd1.print("Peekaboo!");
-  delay(2000);
-}
-```
+Đây là tính năng cho phép bạn tạo ra một khối chức năng của riêng mình.
+Bạn bấm vào **[My Blocks]** chọn **[Make a Block]** rồi đặt tên cho khối.
+Khối **[define...]** là nơi bạn thiết kế chức năng cho nó.
 
-### Giải thích code  
+Cuối cùng, nếu biến **"count"** bằng **"max"** thì điều khiển Servo ở chân D10 cho mở cửa.
+Tương tự, nếu biến **"count"** bằng **"min"** thì điều khiển Servo ở chân D10 đóng cửa.
+Còn nếu biến **"count"** chưa chạm tới một trong hai giá trị trên thì không làm gì cả.
+Nhân vật Bat sẽ thông báo cho bạn biết trạng thái hiện tại của cửa.
 
-Để có thể sử dụng các hàm để điều khiển màn hình [MKE-M07 LCD1602 I2C](https://makerlab.vn/mkem07) đầu tiên ta cần thêm bộ thư viện vào đầu chương trình:
+### Cách khối **[check]** hoạt động
 
-`#include <LiquidCrystal_I2C.h>`: Thêm bộ thư viện [LiquidCrystal_I2C.h](https://github.com/makerlabvn/LiquidCrystal_I2C) với các hàm điều khiển màn hình
+- Nếu **"distance"** < 30cm thì cho tăng biến **"count"** lên 1 đơn vị, nhưng không vượt qua giá trị **"max"**.
+- Ngược lại, nếu **"distance"** ≥ 30cm, thì cho giảm biến **"count"** xuống 1 đơn vị, nhưng không vượt qua giá trị **"min"**.
+- Bằng cách này giá trị **"count"** luôn dao động quanh phạm vi **"từ min đến max"**.
 
-Sau đó ta cần khai báo đối tượng cần điều khiển như ở đây ta khai báo là "lcd1", bạn cũng có thể khai báo thêm "lcd2", "lcd3" tuỳ thích, khi đó các hàm điều khiển phía sau sẽ phải gắn với các đối tượng này:
+### Kết quả
 
-`LiquidCrystal_I2C lcd1(0x27, 16, 2)`: Khai báo đối tượng màn hình "lcd1" với địa chỉ 0x27, 16 ký tự, 2 dòng.
+Sau khi đã nạp code thành công ...
 
-> Lưu ý:  
-> Để điều khiển thêm các LCD khác bạn cần phải thiết lập địa chỉ khác với địa chỉ mặc định 0x27, [tham khảo tài liệu sau](https://makerlab.vn/mkem07) để biết cách thiết lập địa chỉ LCD.  
-
- Chương trình chính gồm các câu lệnh được đặt trong 2 hàm bắt buộc của một chương trình Arduino là `void setup()` và `void loop()`  
-
-`void setup()` (chứa các câu lệnh chỉ khởi chạy 1 lần khi khởi động)
-
-`lcd1.init()`: khởi động màn hình "lcd1", là câu lệnh bắt buộc để bắt đầu điều khiển màn hình.
-`lcd1.clear()`: xoá toàn bộ nội dung trên màn hình "lcd1".
-`lcd1.backlight()`: bật đèn nền màn hình "lcd1".
-`void loop()` (chứa các câu lệnh chạy lặp đi lặp lại )
-
-`lcd1.setCursor(column, row)`: chuyển con trỏ đến vị trí cột và dòng mong muốn của "lcd1" trước khi in ký tự.
-`lcd1.print(data)`: In dữ liệu mong muốn tại vị trí con trỏ của "lcd1", nếu là dạng ký tự thì cần bỏ trong dấu "".
-`delay(time)`: yêu cầu Vietduino Uno chờ (không làm gì cả) trong một khoảng thời gian nhất định, đơn vị là mili giây (ms).
-
-<ins>Quá trình vận hành của chương trình như sau</ins>
-
-- Khởi động đối tượng "lcd1" tại địa chỉ 0x27 với cấu hình là 16 ký tự, 2 dòng.
-- In các thông tin và đếm ngược từ 5 đến 0.
-- Hiển thị "Peekaboo" khi kết thúc và lặp lại quá trình.
-
-## Sơ đồ kết nối
-
-<table><thead>
-  <tr>
-    <th>MakerEDU Shield</th>
-    <th>Thiết bị</th>
-    <th>Cáp kết nối</th>
-  </tr></thead>
-<tbody>
-  <tr>
-    <td>Port I2C</td>
-    <td><a href="https://makerlab.vn/mkem07">Mạch hiển thị MKE-M07 LCD1602 I2C module</a></td>
-    <td><a href="https://hshop.vn/cap-ket-noi-makeredu-xh2-54-4wires-20cm-cable">MakerEdu XH2.54 4Wires</td>
-  </tr>
-</tbody>
-</table>
-
-## Kết quả  
-
-Sau khi đã nạp code thành công bạn có thể xem kết quả trực tiếp trên màn hình LCD, phía sau màn hình LCD có một biến trở (màu xanh dương) để chỉnh "độ tương phản" bạn có thể dùng tua vít để điều chỉnh bạn thấy quá đậm hoặc quá mờ.
-
-![](/ex/less06/image/04_1050px-Man_hinh_LCD1602_I2C.jpg)
-Màn hình MKE-M07 LCD1602 kết nối với Port I2C của MakerEdu Shield hiển thị thông tin.
+![hình dự án hoạt động](project_image.png)
 
 ## Bài tập thêm
 
-### <ins>Bài tập 1:</ins>
-
-- Viết chương trình nhận ký tự từ Serial Monitor của Arduino sau đó hiển thị lên màn hình LCD / [Lời giải](/solution/README.md).
-
-## Nguồn tài liệu (tham khảo thêm)
-
-- [Tìm hiểu chi tiết về Giao thức I2C.](https://www.circuitbasics.com/basics-of-the-i2c-communication-protocol/)
-- [Getting Started with Arduino | Arduino Documentation](https://docs.arduino.cc/learn/starting-guide/getting-started-arduino)
+- Thử một chút điều chỉnh, bản hãy thử làm một bộ thùng rác thông minh, khi có người đừng gần mới mở nắp, và tự đống nắp lại khi người rời đi.
 
 ## Bài viết liên quan
 
-- [Bộ MakerEdu Starter Kit for Arduino - MakerLab Wiki](/README.md)
-- [Bài 5: Điều kiển độ sáng đèn Led với Arduino (Analog Out)](/ex/less05/README.md)
-- [Bài 7: Bật tắt đèn tự động với cảm biến ánh sáng quang trở và đèn Led (Analog In + Digital Out)](/ex/less07/README.md)
+- [MakerEdu Creator Kit for mBlock](/README.md)
+- [Bài 5: Đồng hồ đếm ngược](/ex/less05/README.md)
+- [Bài 7: Cảnh báo va chạm](/ex/less07/README.md)
