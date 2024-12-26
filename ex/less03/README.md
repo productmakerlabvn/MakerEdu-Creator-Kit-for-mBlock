@@ -74,4 +74,6 @@ Sau khi đã nạp code thành công ...
 
 ## Bài viết liên quan
 
-...
+- [MakerEdu Creator Kit for mBlock](/README.md)
+- [Bài 2: Điều khiển độ sáng đèn Led](/ex/less02/README.md)
+- [Bài 4: Đèn ngủ thông minh](/ex/less04/README.md)
