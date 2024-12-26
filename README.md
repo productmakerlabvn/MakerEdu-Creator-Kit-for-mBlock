@@ -8,14 +8,14 @@ Bộ MakerEdu Creator Kit for mBlock được xây dựng dựa trên mạch Mak
 
 ## Danh sách linh kiện
 
-1. Mạch MakerEdu Creator
-2. [MKE-M01] Mạch led đơn 10mm single LED module (White)
-3. [MKE-M02] Mạch nút nhấn push button tact switch module
-4. [MKE-M04] Mạch biến trở potentiometer module
-5. [MKE-S02] Cảm biến ánh sáng quang trở LDR light sensor
-6. [MKE-M03] Mạch còi báo buzzer module
-7. [MKE-S01] Cảm biến siêu âm ultra sonic distance sensor
-8. Động cơ RC Servo 9G
+1. [Mạch MakerEdu Creator](https://www.makerlab.vn/creator)
+2. [Mạch led đơn 10mm single LED module (White)](https://makerlab.vn/mkem01)
+3. [Mạch nút nhấn push button tact switch module](https://makerlab.vn/mkem02)
+4. [Mạch biến trở potentiometer module](https://makerlab.vn/mkem04)
+5. [Cảm biến ánh sáng quang trở LDR light sensor](https://makerlab.vn/mkes02)
+6. [Mạch còi báo buzzer module](https://makerlab.vn/mkem03)
+7. [Cảm biến siêu âm ultra sonic distance sensor](https://makerlab.vn/mkes01)
+8. [Động cơ RC Servo 9G](https://hshop.vn/dong-co-rc-servo-9g)
 
 ![](/image/02_1050px-MakerEdu_Creator_Kit_for_mBlock_Product_List.png)
 
