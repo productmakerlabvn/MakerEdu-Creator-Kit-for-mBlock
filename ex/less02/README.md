@@ -1,130 +1,88 @@
-# Bài 2: Điều khiển đèn Led chớp tắt với Arduino (Digital Out) - MakerEdu Starter Kit for Arduino
+# Bài 2: Điều khiển độ sáng đèn Led - MakerEdu Creator Kit for mBlock
 
-# Mô tả dự án
+## Mô tả dự án
 
-![](/ex/less02/image/01_750px-Blink_Led.jpg)
-Blink Led
+Tiếp nối bài học trước, trong bài này các bạn cũng sẽ làm dự án điều khiển đèn LED, nhưng dùng biến trở điều khiển.
 
-Trong bài này các bạn sẽ học cách xuất tín hiệu Digital từ các chân tín hiệu của Vietduino Uno, tín hiệu Digital chỉ có 2 mức trạng thái là `HIGH` và `LOW`, tương ứng với mức điện áp `5V` và `0V` tại các chân tín hiệu, chỉ đơn giản như vậy nhưng tín hiệu Digital được sử dụng cho hầu hết các ứng dụng cần có sự lựa chọn có hoặc không như: bật tắt đèn, động cơ, máy bơm,...
-
-> Lưu ý:  
- Các chân tín hiệu Digital của Arduino chỉ có thể cung cấp được điện áp 5VDC với dòng điện tối đa 40mA nên chỉ sử dụng được với những thiết bị công suất nhỏ như đèn Led (15~20mA), các thiết bị công suất lớn như động cơ cần sử dụng thêm mạch công suất đi kèm để điều khiển.  
-Các bạn có thể tìm hiểu thêm bài viết về [Tín hiệu Analog, Digital và các chuẩn giao tiếp cơ bản](/ex/less02/A_D_signal_and_interface/README.md).
-
-## Video
-
-[![](/ex/less02/image/02_video.png)](https://youtu.be/wrWSUBqg77A)
+Không chỉ làm bật tắt đèn LED, thiết bị này còn cho phép bạn điều khiển được độ sáng đèn LED theo ý muốn.
 
 ## Các bước thực hiện
 
 ### Danh sách thiết bị
 
-- [1x Mạch Vietduino Uno (Arduino Uno Compatible)](https://makerlab.vn/vuno)
-- [1x Mạch MakerEdu Shield for Vietduino](https://makerlab.vn/vietduinosd)
-- [1x Cáp USB-C](https://hshop.vn/cap-usb-type-c)
-- [1x Mạch led đơn MKE-M01 10mm single LED module](https://makerlab.vn/mkem01)
+- 1x [Mạch MakerEdu Creator](https://www.makerlab.vn/creator)
+- 1x [Cáp USB-C](https://hshop.vn/cap-usb-type-c)
+- 1x [Mạch biến trở MKE-M04 potentiometer module](https://makerlab.vn/mkem04)
+- 1x [Mạch led đơn MKE-M01 10mm single LED module](https://makerlab.vn/mkem01)
 
 ### Chuẩn bị trước dự án
 
-- Kết nối mạch MakerEdu Shield với mạch Vietduino Uno [theo hướng dẫn](https://makerlab.vn/vietduinosd).
-- Kết nối mạch Vietduino Uno với máy tính qua cáp USB-C sẽ thấy đèn nguồn (ON) trên mạch MakerEdu Shield phát sáng, cài đặt Driver và cấu hình mạch trên phần mềm Arduino [theo hướng dẫn tại đây](https://makerlab.vn/vuno).
-- Tìm hiểu về cấu trúc của một chương trình trên phầm mềm Arduino và ngôn ngữ lập trình Arduino tại đây.
-![](/ex/less02/image/03_.jpg)
-Kết nối mạch Vietduino Uno + MakerEdu Shield với máy tính
+- Tải và cài đặt phần mềm mBlock theo hướng dẫn **[tại đây]**.
+- Tải và cài đặt Driver, cấu hình cho Mạch MakerEdu Creator trên phần mềm mBlock theo hướng dẫn **[tại đây]**.
+- Tải và cài đặt Extension MakerEdu Hardware trên phần mềm mblock theo hướng dẫn **[tại đây]**.
+- Kết nối mạch MakerEdu Creator với máy tính qua cáp USB-C sẽ thấy đèn nguồn (PWR) trên mạch phát sáng.
+- Hiểu cấu trúc của một chương trình trên phầm mềm mBlock và **"ngôn ngữ lập trình kéo thả khối"** theo hướng dẫn **[tại đây]**.
+
+### Sơ đồ kết nối
+
+| MakerEdu Creator | Devices  |
+|------------------|----------|
+| Port A1          | Biến trở |
+| Port D10         | LED đơn  |
 
 ### Chương trình
 
-Mở phần mềm IDE Arduino và tạo một chương trình (Sketch) mới.
-Copy đoạn code sau vào chương trình và tiến nạp chương trình (Upload) [theo hướng dẫn tại đây](https://makerlab.vn/vuno).
+- Download file code **"Bai_2.mblock"**.
+- Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
+- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
 
-```ino
-// Blink Led Example - MakerEdu Starter Kit for Arduino
+#### Blocks Devices:
 
-/*-----------------------------------------------------*/
-
-# define LED_PIN 9 // Khai báo chân điều khiển đèn Led là D9
-
-void setup()
-{
-  // Mở cổng Serial Baudrate 115200 bps
-  Serial.begin(115200);
-
-  // Thiết lập chân D9 là Output để điều khiển Led
-  pinMode(LED_PIN, OUTPUT);
-}
-
-/*-----------------------------------------------------*/
-
-void loop()
-{
-  // Bật đèn Led trong 1s và in thông báo "ON"
-  digitalWrite(LED_PIN, HIGH);
-  Serial.println("ON");
-  delay(1000);
-
-  // Tắt đèn Led trong 1s và in thông báo "OFF"
-  digitalWrite(LED_PIN, LOW);
-  Serial.println("OFF");
-  delay(1000);
-}
-```
+![Creator mBlock Bai 2](/ex/less02/image/Creator_mBlock_Bai_2.png)
 
 ### Giải thích code
 
-Chương trình gồm các câu lệnh được đặt trong 2 hàm bắt buộc của một chương trình Arduino là `void setup()` và `void loop()`
+Chương trình hoạt động:
 
-- `void setup()` (chứa các câu lệnh chỉ khởi chạy 1 lần khi khởi động)
--
-- `Serial.begin(baudrate)`: khởi động cổng kết nối Serial trên mạch Vietduino Uno với tốc độ (baudrate) mong muốn, các tốc độ hỗ trợ thường là: 9600, 115200,...
-- `pinMode(Pin, OUTPUT)`: cấu hình chân tín hiệu là chân xuất tín hiệu (OUTPUT) để điều khiển đèn Led.
-- `void loop()`: (chứa các câu lệnh chạy lặp đi lặp lại )
--
-- `digitalWrite(Pin, HIGH);`: Xuất tín hiệu Digital mức cao (HIGH) ra chân tín hiệu giúp bật đèn Led.
-- `Serial.println(data)`: gửi dữ liệu từ mạch Vietduino Uno lên máy tính kèm theo ký tự xuống dòng, nếu dữ liệu là kiểu ký tự thì cần để trong dấu "".
-- `delay(time)`: yêu cầu Vietduino Uno chờ (không làm gì cả) trong một khoảng thời gian nhất định, đơn vị là mili giây (ms).
-- `digitalWrite(Pin, LOW);`: Xuất tín hiệu Digital mức thấp (LOW) ra chân tín hiệu giúp tắt đèn Led.
+- Bên trong khối **[forever]**.
+- Việc đầu tiên bo mạch làm là đọc giá trị Analog từ chân A1 (Biến trở) rồi cho lưu vào biến **"pot"**.
+- Bằng cách dùng khối **[send upload mode message...]**, bạn có thể xem giá trị này qua nhân vật Panda nói trên phần mềm mBlock.
+- Sau đó giá trị trong biến **"pot"** sẽ được lọc một lần nữa bằng khối **[constrain...]** để đảm bảo giá trị luôn nằm trong khoảng **"từ 0 đến 676"**.
+- Rồi ánh xạ giá trị **"pot"** sang một giá trị tương ứng ở thang đo (%) và lưu vào biến **"led"**. Bạn có thể xem giá trị này qua nhân vật Bird nói trên phần mềm mBlock.
+- Cuối cùng là điều khiển chân D10 (LED) xuất tín hiệu PWM theo giá trị của biến **"led"** giúp điều khiển độ sáng đèn LED.
 
-### Kết nối phần cứng
+#### Ý nghĩa con số 676 là gì?
 
-<table><thead>
-  <tr>
-    <th>MakerEDU Shield</th>
-    <th>Thiết bị</th>
-    <th>Cáp kết nối</th>
-  </tr></thead>
-<tbody>
-  <tr>
-    <td>Port D9</td>
-    <td><a href="https://makerlab.vn/mkem01">Mạch led đơn MKE-M01 10mm single LED module</a></td>
-    <td><a href="https://hshop.vn/products/cap-ket-noi-makeredu-xh2-54-3wires-20cm-cable">MakerEdu XH2.54 3Wires</a></td>
-  </tr>
-</tbody>
-</table>
+- Bởi vì phạm vi kết quả mà giá trị Analog trả về là **"từ 0 đến 1023"**. Tương ứng mức điện áp **"từ 0V đến 5V"**. Các module của hệ sinh thái MakerEdu đều hoạt động ở mức điện áp **"từ 0V đến 3,3V"**.
+- Vậy nên nếu nguồn điện áp lý tưởng cấp cho bo mạch là đúng chính xác 5V, thì giá trị lớn nhất đọc được từ module Biến trở sẽ là 676, tương ứng mức điện áp 3,3V.
+- Nhưng thật tế nguồn điện chúng ta sử dụng cấp cho thiết bị, mỗi bạn mỗi khác. Thường dao động quanh mức 5V, có thể là 4,9V cũng có thể là 5,1V chẳng hạn. Cho nên bước lọc kết quả trên là rất quan trọng!
+
+#### Chức năng khối **[constrain...]**:
+
+- Như cái tên của khối, sự ràng buộc. Trong chương trình này, khối sẽ kiểm tra giá trị trong biến **"pot"**.
+  - Nếu giá trị nhỏ hơn 0, sẽ chỉnh lại biến **"pot"** giá trị 0.
+  - Nếu giá trị lớn hơn 676, sẽ lưu lại vào biến **"pot"** giá trị 676.
+  - Còn nếu giá trị **"pot"** trong khoảng **"từ 0 đến 676"**, thì vẫn giữ nguyên giá trị của biến.
+
+#### Chức năng khối **[map...]**:
+
+- Khối này có chức năng ánh xạ một giá trị từ thang đo này sang một giá trị tương ứng ở thang đo khác.
+- Trong chương trình này, khối sẽ ánh xạ giá trị biến **"pot"** trong thang đo Analog (0 - 676) sang một giá trị tương ứng ở thang đo % (0 - 100) rồi lưu vào biến **"led"**.
 
 ### Kết quả
 
-Sau khi đã nạp code thành công, nhấn vào *"biểu tượng kính lúp"* hoặc chọn *Tools > Serial* Monitor để mở Serial Monitor, chọn đúng tốc độ Baudrate là 115200bps để thấy chương trình hoạt động, Module Led kết nối tại chân D9 sẽ chớp tắt 1s một lần kèm theo trạng thái hiển thị lên Serial Monitor:
+Sau khi đã nạp code thành công ...  
 
-![](/ex/less02/image/04_.jpg)
-Module Led kết nối với Port D9 trên MakerEdu Shield chớp tắt 1 giây / 1 lần.
-
-![](/ex/less02/image/05_1050px-Screenshot_2023-07-08_at_17.05.57.png)
-Serial Monitor trên phần mềm Arduino hiển thị trạng thái của đèn Led.
+![hình dự án hoạt động](project_image.png)  
 
 ## Bài tập thêm
 
-<ins>Bài tập 1:</ins>
-
-- Sử dụng **Serial Monitor** để điều khiển đèn Led từ máy tính với ký tự `'1'` là **bật đèn** và `'0'` là **tắt đèn** / [Lời giải](/solution/README.md).
-
-## Tài liệu tham khảo
-
-## Tài liệu tham khảo
-
-- [Getting Started with Arduino | Arduino Documentation](https://docs.arduino.cc/learn/starting-guide/getting-started-arduino)
+- Bạn đã biết cách đọc giá trị từ biến trở, hãy thử dùng chính giá trị này, có thể biến đổi hệ số hay thang đo tùy ý bạn, để điều khiển tốc độ chớp tắt của đèn LED xem hiệu ứng hiệu lại như thế nào.
+- Nhân vật Bird sẽ nói cho bạn biết giá trị của **"led"** hiện đang là bao nhiêu
+- Cuối cùng, chương trình dùng giá trị của biến **"led"** để xuất tín hiệu PWM trên chân D10, điều khiển độ sáng đèn LED.
 
 ## Bài viết liên quan
 
-- [Bộ MakerEdu Starter Kit for Arduino - MakerLab Wiki](/README.md)
-- [Bài 1: Xin chào Arduino! (Serial Monitor)](/ex/less01/README.md)
-- [Bài 3: Nhận tín hiệu từ nút nhấn với Arduino (Digital In)](/ex/less03/README.md)
+- [MakerEdu Creator Kit for mBlock](/README.md)
+- [Bài 1: Điều khiển bật tắt đèn Led](/ex/less01/README.md)
+- [Bài 3: Chống trộm ngăn kéo](/ex/less03/README.md)

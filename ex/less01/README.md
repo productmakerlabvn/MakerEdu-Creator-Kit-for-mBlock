@@ -1,113 +1,73 @@
-# Bài 1: Xin chào Arduino! (Serial Monitor) - MakerEdu Starter Kit for Arduino
+# Bài 1: Điều khiển bật tắt đèn Led - MakerEdu Creator Kit for mBlock
 
 ## Mô tả dự án
 
-![](/ex/less01/image/01_1050px-Serial-monitor-new-editor.png)
-Arduino Serial Monitor
-Trong bài thực hành đầu tiên này các bạn sẽ học cách giao tiếp giữa mạch Vietduino Uno và máy tính qua công cụ Serial Monitor trên phần mềm Arduino, qua đó các bạn có thể gửi các dữ liệu từ Vietduino Uno lên máy tính và ngược lại sẽ giúp bạn thực hiện vô số các ứng dụng sau này như:
+... hình thumnail dự án
 
-- Đọc dữ liệu từ cảm biến kết nối với Vietduino Uno lên máy tính.
-
-- Điều khiển Vietduino Uno bằng máy tính.
-
-- Điều khiển máy tính bằng Vietduino Uno.
-
-- Thông báo tiến trình hoạt động của Vietduino lên máy tính để kiểm tra lỗi (Debug),...
-
-> Lưu ý:
-Các bạn có thể tìm hiểu thêm bài viết về Cách sử dụng Serial Monitor & Serial Plotter trên phần mềm Arduino.
-
-## Video
-
-[![](/ex/less01/image/02_video.png)](https://youtu.be/PxlqWvR3NM0)
+Trong bài học đầu tiên này, bạn sẽ được làm quen với ngôn ngữ lập trình kéo thả khối mBlock qua dự án điều khiển bật tắt đèn LED bằng nút nhấn.
 
 ## Các bước thực hiện
 
 ### Danh sách thiết bị
 
-- 1x [Mạch Vietduino Uno (Arduino Uno Compatible)](https://makerlab.vn/vuno)
-- 1x [Cáp USB-C](https://hshop.vn/cap-usb-type-c)
+- 1x Mạch MakerEdu Creator.
+- 1x Cáp USB-C.
+- 1x Mạch nút nhấn MKE-M02 push button tact switch module.
+- 1x Mạch led đơn MKE-M01 10mm single LED module.
 
 ### Chuẩn bị trước dự án
 
-- Kết nối mạch Vietduino Uno với máy tính qua cáp USB-C sẽ thấy đèn nguồn (ON) trên mạch phát sáng, cài đặt Driver và cấu hình mạch trên phần mềm Arduino [theo hướng dẫn tại đây](https://makerlab.vn/vuno).
-- Tìm hiểu về cấu trúc của một chương trình trên phầm mềm Arduino và ngôn ngữ lập trình Arduino tại đây.
+- Tải và cài đặt phần mềm mBlock theo hướng dẫn tại đây.
+- Tải và cài đặt Driver, cấu hình cho Mạch MakerEdu Creator trên phần mềm mBlock theo hướng dẫn tại đây.
+- Tải và cài đặt Extension MakerEdu Hardware trên phần mềm mblock theo hướng dẫn tại đây.
+- Kết nối mạch MakerEdu Creator với máy tính qua cáp USB-C sẽ thấy đèn nguồn (PWR) trên mạch phát sáng.
+- Hiểu cấu trúc của một chương trình trên phầm mềm mBlock và "ngôn ngữ lập trình kéo thả khối" theo hướng dẫn tại đây.
+... hình kết nối mạch MakerEdu Creator với máy tính
 
-![](/ex/less01/image/03_1050px-Vietduino_Uno_connect_with_Computer.jpg)
-Kết nối Vietduino Uno với máy tính bằng cáp USB-C
+### Sơ đồ kết nối
+
+| MakerEdu Creator | Devices  |
+|------------------|----------|
+| Port A1          | Nút nhấn |
+| Port D10         | LED đơn  |
 
 ### Chương trình
 
-Mở phần mềm IDE Arduino và tạo một chương trình (Sketch) mới.
-Copy đoạn code sau vào chương trình và tiến nạp chương trình (Upload) theo hướng dẫn tại đây.
+- Download file code "Bai_1.mblock".
+- Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
+- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn tại đây.
 
-```ino
-// Hello Arduino Example - MakerEdu Starter Kit for Arduino
+### Blocks Devices
 
-/*-----------------------------------------------------*/
-
-void setup()
-{
-  // Khởi động chuẩn kết nối Serial với tốc độ Baudrate 115200bps
-  Serial.begin(115200);
-}
-
-/*-----------------------------------------------------*/
-
-void loop()
-{
-  // Nội dung này được in ra cứ mỗi 2 giây (2000 mili giây)
-  Serial.print("Hello Arduino!");
-  delay(1000);
-  Serial.println("_Done");
-  delay(1000);
-
-  // In ra ký tự được truyền từ máy tính (nếu có)
-  while (Serial.available())
-  {
-    char key = Serial.read();
-    Serial.print("Received_");
-    Serial.println(key);
-    delay(1000);
-  }
-}
-```
+![](/ex/less01/image/524px-Creator_mBlock_Bai_1.png)
 
 ### Giải thích code
 
-Chương trình gồm các câu lệnh được đặt trong 2 hàm bắt buộc của một chương trình Arduino là `void setup()` và `void loop()`
+#### Cấu trúc chung của chương trình
 
-- `void setup()` (chứa các câu lệnh chỉ khởi chạy 1 lần khi khởi động)
+- Tất cả chương trình đều bắt đầu từ khối **[ when MakerEdu Creator starts up ]**. Khối này chỉ thực hiện 1 lần và chương trình sẽ kết thúc. Bo mạch sẽ cần "reset" để chạy lại từ đầu.
+- Vậy nên, để chương trình hoạt động liên tục, ta sẽ cần dùng thêm một khối **[ forever ]**. Những khối nào nằm trong khối này, sẽ được thực hiện tuần tự từ trên xuống, và cứ thế lặp lại.
 
-- `Serial.begin(baudrate)`: khởi động cổng kết nối Serial trên mạch Vietduino Uno với tốc độ (baudrate) mong muốn, các tốc độ hỗ trợ thường là: 9600, 115200,...
-- `void loop()` (chứa các câu lệnh chạy lặp đi lặp lại )
+#### Chương trình hoạt động
 
-- `Serial.print(data)`: gửi dữ liệu từ mạch Vietduino Uno lên máy tính "không" kèm theo ký tự xuống dòng, nếu dữ liệu là kiểu ký tự thì cần để trong dấu "".
-- `Serial.println(data)`: gửi dữ liệu từ mạch Vietduino Uno lên máy tính kèm theo ký tự xuống dòng, nếu dữ liệu là kiểu ký tự thì cần để trong dấu "".
-- `delay(time)`: yêu cầu Vietduino Uno chờ (không làm gì cả) trong một khoảng thời gian nhất định, đơn vị là mili giây (ms).
-- `Serial.available()`: kiểm tra có dữ liệu gửi về cổng Serial hay không, ví dụ bạn gửi: "abc" thì giá trị của hàm này là 3.
-- `Serial.read()`: đọc dữ liệu nhận được từ cổng Serial dưới dạng ký tự.
+- Đầu tiên, khi bo mạch mới khởi động, có 2 khối được thực hiện một lần trước khi bước vào khối **[ forever ]**.
+  - Khối **[ set Digital port... ]** sẽ điều khiển chân D10 (LED) xuất tín hiệu `LOW`, làm tắt đèn LED.
+  - Khối **[ set (led)... ]** tạo ra một biến có tên **"led"** và lưu giá trị `0`. Biến này có vai trò lưu trạng thái hoạt động hiện tại của đèn LED, với giá trị `0` là đèn LED tắt và giá trị `1` là đèn LED sáng.
+- Bên trong khối **[ forever ]**.
+  - Bo mạch dùng khối **[ Button port... ]** để kiểm tra liên tục chân A1, xem có ai thao tác với nút nhấn không? Không có thì cho kiểm tra lại tiếp. Nếu có phát hiện nút vừa được nhấn 1 click, thì cho so sánh giá trị của biến **"led"**.
+    - Nếu **"led"** bằng `0`, tức đèn LED đang tắt. Lúc này lưu **"led"** bằng `1` và cho chân D10 (LED) xuất tín hiệu `HIGH`, làm bật đèn LED.
+    - Nếu **"led"** khác `0` (bằng `1`), tức đèn LED đang bật. Lúc này lưu **"led"** bằng `0` và cho chân D10 (LED) xuất tín hiệu `LOW`, làm tắt đèn LED.
 
 ### Kết quả
 
-Sau khi đã nạp code thành công, nhấn vào "biểu tượng kính lúp" hoặc chọn Tools > Serial Monitor để mở Serial Monitor, chọn đúng tốc độ Baudrate là 115200bps để thấy chương trình hoạt động, nhập ký tự "abcd" sẽ nhận được kết quả như sau:
-
-![](/ex/less01/image/04_1050px-Chương_trình_Xin_Chào_Arduino!.png)
-Chương trình Xin Chào Arduino!
+Sau khi đã nạp code thành công ...  
+... hình dự án hoạt động
 
 ### Bài tập thêm
 
-Bài tập 1:
+Thay vì mỗi lần nhấn nút 1 cái, là đèn LED thay đổi trạng thái. Bạn hãy thử code sao cho khi nút đang được nhấn thì đèn sáng, và ngược lại nhả nút đèn sẽ tắt.
 
-- Hàm `Serial.write(number)` được sử dụng để in các ký tự trong **Bảng mã ASCII**, hãy thử in *"Hello Arduino"* bằng hàm này / [Lời giải](/solution/README.md).
-
-## Tài liệu tham khảo
-
-- [Các lệnh chức năng cho giao tiếp Serial.](https://docs.arduino.cc/language-reference/en/functions/communication/serial/)
-- [Bảng mã ASCII.](https://computersciencewiki.org/index.php/ASCII)
-- [Getting Started with Arduino | Arduino Documentation](https://docs.arduino.cc/learn/starting-guide/getting-started-arduino)
 
 ## Bài viết liên quan
 
-- [Bộ MakerEdu Starter Kit for Arduino - MakerLab Wiki](/README.md)
-- [Bài 2: Điều khiển đèn Led chớp tắt với Arduino (Digital Out)](/ex/less02/README.md)
+...

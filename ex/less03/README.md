@@ -1,185 +1,79 @@
-# Bài 3: Nhận tín hiệu từ nút nhấn với Arduino (Digital In) - MakerEdu Starter Kit for Arduino
+# Bài 3: Chống trộm ngăn kéo - MakerEdu Creator Kit for mBlock
 
 ## Mô tả dự án
 
-Trong bài này các bạn sẽ học cách nhận tín hiệu Digital từ các chân tín hiệu của Vietduino Uno, được sử dụng cho các ứng dụng như nhận tín hiệu từ nút nhấn điều khiển, cảm biến,... với chỉ hai trạng thái là có hoặc không, ở bài trước khi "xuất" tín hiệu Digital ta biết mức HIGH tương ứng với điện áp 5V và LOW tương ứng với 0V, tuy nhiên khi nhận tín hiệu Digital sẽ tuân theo chuẩn TTL với quy định 2\~5VDC sẽ được hiểu là mức cao HIGH và từ 0\~0.8VDC sẽ được hiểu là mức thấp LOW như hình sau:
+Dùng cảm biến ánh sáng quang trở phát hiện mở tủ bật báo động bằng còi Buzzer, hiển thị giá trị cảm biến lên sprite ...
 
-![](/ex/less03/image/01_518d5681ce395f1e11000000.jpg)
-Bảng định mức điệp áp Digital TTL của thiết bị sử dụng 5VDC
+Giả sử bạn có một ngăn hộp tủ bí mật, chứa những món đồ bạn yêu thích, không muốn bị mấy đứa em quậy phá.
 
-> Lưu ý:
-Các bạn có thể tìm hiểu thêm bài viết về [Tín hiệu Analog, Digital và các chuẩn giao tiếp cơ bản](/ex/less02/A_D_signal_and_interface/README.md).
+Bài học này sẽ chỉ bạn một bộ báo trộm cho ngăn tủ.
 
-## Video
+Dựa trên nguyên lý khi đóng tủ, ánh sáng trong hộc tủ rất tối. Và ngược lại khi mở tủ, ánh sáng không gian xung quanh sẽ tràn vào.
 
-[![](/ex/less03/image/02_video_less03.png)](https://youtu.be/DjCQR_YDwZo)
+Bằng cách dùng cảm biến Quang trở, có thể đo đạc theo sự thay đổi cường độ ánh sáng. Và kết hợp với còi báo.
+
+Mỗi khi có ai đó tự ý mở hộc tủ của bạn, còi sẽ bật cảnh báo.
 
 ## Các bước thực hiện
 
 ### Danh sách thiết bị
 
-- [1x Mạch Vietduino Uno (Arduino Uno Compatible)](https://makerlab.vn/vuno)
-- [1x Mạch MakerEdu Shield for Vietduino](https://makerlab.vn/vietduinosd)
-- [1x Cáp USB-C](https://hshop.vn/cap-usb-type-c)
-- [1x Mạch nút nhấn MKE-M02 push button tact switch module](https://makerlab.vn/mkem02)
+- 1x Mạch MakerEdu Creator.
+- 1x Cáp USB-C.
+- 1x Cảm biến ánh sáng quang trở MKE-S02 LDR light sensor.
+- 1x Mạch còi báo MKE-M03 buzzer module.
 
 ### Chuẩn bị trước dự án
 
-- Kết nối mạch MakerEdu Shield với mạch Vietduino Uno [theo hướng dẫn](https://makerlab.vn/vietduinosd).
-- Kết nối mạch Vietduino Uno với máy tính qua cáp USB-C sẽ thấy đèn nguồn (ON) trên mạch MakerEdu Shield phát sáng, cài đặt Driver và cấu hình mạch trên phần mềm Arduino [theo hướng dẫn tại đây](https://makerlab.vn/vuno).
-- Tìm hiểu về cấu trúc của một chương trình trên phầm mềm Arduino và ngôn ngữ lập trình Arduino tại đây.
-![](/ex/less03/image/03_1050px-connect_uno_and_shield_to_computer.jpg)
-Kết nối mạch Vietduino Uno + MakerEdu Shield với máy tính
+- Tải và cài đặt phần mềm mBlock theo hướng dẫn **[tại đây]**.
+- Tải và cài đặt Driver, cấu hình cho Mạch MakerEdu Creator trên phần mềm mBlock theo hướng dẫn **[tại đây]**.
+- Tải và cài đặt Extension MakerEdu Hardware trên phần mềm mblock theo hướng dẫn **[tại đây]**.
+- Kết nối mạch MakerEdu Creator với máy tính qua cáp USB-C sẽ thấy đèn nguồn (PWR) trên mạch phát sáng.
+- Hiểu cấu trúc của một chương trình trên phầm mềm mBlock và **"ngôn ngữ lập trình kéo thả khối"** theo hướng dẫn **[tại đây]**.
+
+### Sơ đồ kết nối
+
+| MakerEdu Creator | Devices              |
+|------------------|----------------------|
+| Port A1          | Cảm biến Quang trở   |
+| Port D10         | Còi báo              |
 
 ### Chương trình
 
-Mở phần mềm **IDE Arduino** và tạo một chương trình **(Sketch)** mới.
-Copy đoạn code sau vào chương trình và tiến nạp chương trình (Upload) [theo hướng dẫn tại đây](https://makerlab.vn/vuno).
+- Download file code **"Bai_3.mblock"**.
+- Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
+- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
 
-```ino
-// Button Example - MakerEdu Starter Kit for Arduino
+#### Blocks Devices
 
-/*-----------------------------------------------------*/
-
-// Chọn chân đọc tín hiệu Nút nhấn
-
-# define BUTTON_PIN 10 // D10
-
-// Chọn mức tín hiệu đọc từ Nút nhấn với trạng thái tương ứng
-
-# define PRESS_BUTTON LOW    // Khi "nhấn nút" tín hiệu đọc được là LOW
-
-# define RELEASE_BUTTON HIGH // Khi "nhả nút" tín hiệu đọc được là HIGH
-
-// Chọn khoảng thời gian chờ để xác minh nút đã được nhấn
-
-# define TIME_DEBOUNCE 10 // Đơn vị (ms)
-
-int count = 0; // Tạo biến count kiểu số nguyên (Integer) với giá trị 0
-
-/*-----------------------------------------------------*/
-
-void setup()
-{
-  // Mở cổng Serial Baudrate 115200 bps
-  Serial.begin(115200);
-
-  // Thiết lập chân D10 là Input để đọc tín hiệu từ Nút nhấn
-  pinMode(BUTTON_PIN, INPUT);
-}
-
-/*-----------------------------------------------------*/
-
-void loop()
-{
-  // Nghi vấn nút đang được "nhấn" ?
-  if (digitalRead(BUTTON_PIN) == PRESS_BUTTON)
-  {
-    // Chờ qua khoảng thời gian để xác minh
-    delay(TIME_DEBOUNCE);
-
-    // Xác thực chắc chắn nút đang được "nhấn"
-    if (digitalRead(BUTTON_PIN) == PRESS_BUTTON)
-    {
-      // In thông báo cho biết đang "nhấn"
-      Serial.println("PRESS");
-
-      // Chờ cho đến khi "nhả" nút
-      while (digitalRead(BUTTON_PIN) == PRESS_BUTTON)
-      {
-      }
-
-      // In thông báo cho biết nút đã "nhả"
-      Serial.println("RELEASE");
-
-      // Đây là 1 Click
-      count++;
-      Serial.println(count);
-      Serial.println("--- --- ---");
-    }
-  }
-}
-```
+![Creator mBlock Bai 3](/ex/less03/image/Creator_mBlock_Bai_3.png)
 
 ### Giải thích code
 
-Mạch nút nhấn sẽ trả về tín hiệu Digital mức thấp (LOW) khi được nhấn và khi không được nhấn là mức cao (HIGH) nên ta thiết lập hai trạng thái như sau:
+Chương trình hoạt động:
 
-```ino
-#define PRESS_BUTTON LOW    // Khi "nhấn nút" tín hiệu đọc được là LOW
-#define RELEASE_BUTTON HIGH // Khi "nhả nút" tín hiệu đọc được là HIGH
-```
-
-Chương trình gồm các câu lệnh được đặt trong 2 hàm bắt buộc của một chương trình Arduino là `void setup()` và `void loop()`  
-
-`void setup()` (chứa các câu lệnh chỉ khởi chạy 1 lần khi khởi động)
-
-- `Serial.begin(baudrate)`: khởi động cổng kết nối Serial trên mạch Vietduino Uno với tốc độ (baudrate) mong muốn, các tốc độ hỗ trợ thường là: 9600, 115200,...
-- `pinMode(Pin, INPUT)`: cấu hình chân tín hiệu là chân nhận tín hiệu (INTPUT) để đọc tín hiệu từ nút nhấn.  
-
-`void loop()` (chứa các câu lệnh chạy lặp đi lặp lại )
-
-- `digitalRead(Pin)`: hàm này sẽ trả về trạng thái của chân tín hiệu đang là HIGH (1) hoặc LOW (0).
-- `Serial.println(data)`: gửi dữ liệu từ mạch Vietduino Uno lên máy tính kèm theo ký tự xuống dòng, nếu dữ liệu là kiểu ký tự thì cần để trong dấu "".
-- `delay(time)`: yêu cầu Vietduino Uno chờ (không làm gì cả) trong một khoảng thời gian nhất định, đơn vị là mili giây (ms).
-- `count++`: tăng giá trị của biến count lên 1 đơn vị.  
-
-<ins>Quá trình vận hành của chương trình như sau</ins>:
-
-- Bo mạch sẽ kiểm tra liên tục tín hiệu trên nút nhấn.
-- Bình thường khi *"nút không được nhấn"*, tín hiệu đọc được luôn là `HIGH`, bo mạch sẽ không làm gì cả.
-- Nhưng khi bo mạch phát hiện *"nút được nhấn"*, tín hiệu đọc được là `LOW`.
-- Bo sẽ chờ trong một khoảng thời gian xác minh, sau đó kiểm tra lại một lần nữa có đúng là nút đang được nhấn hay không?
-- Nếu nút không được nhấn, thì bo không làm gì cả, ngược lại sẽ cho in thông báo **"PRESS"** lên Serial.
-- Sau đó, bo kiểm tra liên tục nút nhấn, chờ cho đến khi nào phát hiện nút được nhả ra, sẽ cho in thông báo **"RELEASE"** lên Serial.
-- Cuối cùng là tăng *"số đếm"* lên một đơn vị, và cho biết đây là lần nhấn nút thứ mấy rồi.
-
-### Kết nối phần cứng
-
-<table><thead>
-  <tr>
-    <th>MakerEDU Shield</th>
-    <th>Thiết bị</th>
-    <th>Cáp kết nối</th>
-  </tr></thead>
-<tbody>
-  <tr>
-    <td>Port D10</td>
-    <td><a href="https://makerlab.vn/mkem02">Mạch nút nhấn MKE-M02 push button tact switch module</a></td>
-    <td><a href="https://hshop.vn/cap-ket-noi-makeredu-xh2-54-3wires-20cm-cable">MakerEdu XH2.54 3Wires</td>
-  </tr>
-</tbody>
-</table>
+- Bên trong khối **[forever]**.
+- Đầu tiên bo mạch đọc giá trị Analog từ chân A1 đang kết nối với cảm biến Quang trở, và cho lưu vào biến **"LDR"**. Nhân vật Panda sẽ nói bạn biết giá trị này.
+- Sau đó biến **"LDR"** sẽ qua khối **[constrain...]** để lọc giá trị, đảm bảo luôn nằm trong khoảng **"từ 0 đến 676"**.
+- Rồi dùng khối **[map...]** để ánh xạ giá trị biến **"LDR"** của thang đo Analog sang giá trị biến **"light"** của thang đo %. Nhân vật Bird sẽ nói bạn biết giá trị này.
+- Cuối cùng dựa theo giá trị trong **"light"**.
+  - Nếu lớn hơn 50% sẽ kích hoạt còi ở chân D10.
+  - Ngược lại thì cho tắt còi.
+- Nhân vật Sheep sẽ thông báo cho bạn biết trạng thái của hộp tủ.
 
 ### Kết quả
 
-Sau khi đã nạp code thành công, nhấn vào "biểu tượng kính lúp" hoặc chọn Tools > Serial Monitor để mở Serial Monitor, chọn đúng tốc độ Baudrate là 115200bps để thấy chương trình hoạt động, Module Nút Nhấn kết nối với Port D10 sẽ hiển thị trạng thái lên Serial Monitor:
+Sau khi đã nạp code thành công ...
 
-![](/ex/less03/image/04_1050px-F72A75C3-EFEF-4195-BD82-ED4CB0F8CD2B_1_201_a.jpg)
-Module nút nhấn kết nối với port D10 sẽ hiển thị trạng thái lên Serial Monitor
-
-![](/ex/less03/image/05_1050px-Screenshot_2023-07-09_at_15.30.35.png)
-Serial Monitor trên phần mềm Arduino hiển thị trạng thái của module nút nhấn.
+![hình dự án hoạt động](project_image.png)
 
 ## Bài tập thêm
 
-<ins>Bài tập 1</ins>:
-
-- Bạn hãy thử thay đổi thông số `TIME_DEBOUNCE` về **0** và xem kết quả thao tác nút nhấn thế nào khi ta đã bỏ qua khoảng thời gian để xác minh.  
-
-<ins>Bài tập 2</ins>:
-
-- Viết chương trình khi **nhấn nút** sẽ bật đèn Led và **nhả nút** ra sẽ tắt đèn Led / [Lời giải](/solution/README.md).  
-
-## Nguồn tài liệu (tham khảo thêm)
-
-- [Chức năng của điện trở "kéo lên", "kéo xuống" cho Nút nhấn.](https://www.circuitbasics.com/pull-up-and-pull-down-resistors/)
-- [Chống nhiễu cho nút nhấn như thế nào?.](https://www.youtube.com/watch?v=e1-kc04jSE4&ab_channel=TexasInstruments)
-- [Cách loại bỏ hiện tượng nhiễu của nút nhấn bằng chương trình.](https://docs.arduino.cc/built-in-examples/digital/Debounce)
-- [Getting Started with Arduino | Arduino Documentation](https://docs.arduino.cc/learn/starting-guide/getting-started-arduino)
+- Kết hợp thêm Nút nhấn để bật tắt tính năng báo trộm này. Đâu phải lúc nào bạn cũng muốn mỗi khi chính mình mở tủ còi lại kêu đúng chứ.
+- Thao tắc Nút nhấn để bật tắt tính năng báo động thì dễ quá, ai cũng làm được. Bạn hãy thử thêm một chút tính năng bảo mật. Bằng cách thao tác số lần nút nhấn khác nhau mà chỉ riêng mình bạn biết để bật tắt tính năng báo động xem.
 
 ## Bài viết liên quan
 
-- [Bộ MakerEdu Starter Kit for Arduino - MakerLab Wiki](/README.md)
-- [Bài 2: Điều khiển đèn Led chớp tắt với Arduino (Digital Out)](/ex/less02/README.md)
-- [Bài 4: Nhận tín hiệu từ biến trở với Arduino (Analog In)](/ex/less04/README.md)
+- [MakerEdu Creator Kit for mBlock](/README.md)
+- [Bài 2: Điều khiển độ sáng đèn Led](/ex/less02/README.md)
+- [Bài 4: Đèn ngủ thông minh](/ex/less04/README.md)
