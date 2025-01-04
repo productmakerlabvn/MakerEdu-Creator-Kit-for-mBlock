@@ -60,8 +60,10 @@ Trong bài học đầu tiên này, bạn sẽ được làm quen với ngôn ng
 
 ### Kết quả
 
-Sau khi đã nạp code thành công ...  
-... hình dự án hoạt động
+<video width="640" height="360" controls>
+  <source src="/ex/less01/image/BAI1.mp4" type="video/mp4">
+</video>
+
 
 ### Bài tập thêm
 
