@@ -60,7 +60,10 @@ Trong bài học đầu tiên này, bạn sẽ được làm quen với ngôn ng
 
 ### Kết quả
 
-<div align="center"> <iframe width="560" height="315" src="https://www.youtube.com/embed/0g3lEcxE05g" frameborder="0" allowfullscreen></iframe> </div>
+<div align="center">
+    <video src="https://github.com/MinhKhanh614/MakerEdu-Creator-Kit-for-mBlock/blob/main/ex/less01/BAI1.mp4" alt="" height=200/>
+</div>
+
 
 
 ### Bài tập thêm
