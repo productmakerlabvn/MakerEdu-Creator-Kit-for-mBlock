@@ -60,7 +60,8 @@ Trong bài học đầu tiên này, bạn sẽ được làm quen với ngôn ng
 
 ### Kết quả
 
-![![](/ex/less01/image/BAI1.png)](/ex/less01/image/BAI1.mp4)
+<div align="center"> <iframe width="560" height="315" src="https://www.youtube.com/embed/0g3lEcxE05g" frameborder="0" allowfullscreen></iframe> </div>
+
 
 ### Bài tập thêm
 
