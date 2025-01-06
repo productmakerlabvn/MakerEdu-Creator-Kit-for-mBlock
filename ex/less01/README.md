@@ -60,10 +60,7 @@ Trong bài học đầu tiên này, bạn sẽ được làm quen với ngôn ng
 
 ### Kết quả
 
-<video width="640" height="360" controls>
-  <source src="/ex/less01/image/BAI1.mp4" type="video/mp4">
-</video>
-
+![![](/ex/less01/image/BAI1.png)](/ex/less01/image/BAI1.mp4)
 
 ### Bài tập thêm
 
