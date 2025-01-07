@@ -60,8 +60,7 @@ Trong bài học đầu tiên này, bạn sẽ được làm quen với ngôn ng
 
 ### Kết quả
 
-
-
+[![](/ex/less01/image/BAI1.png)](https://youtu.be/suhNl-qUmgw)
 
 ### Bài tập thêm
 
