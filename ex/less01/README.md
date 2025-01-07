@@ -60,8 +60,7 @@ Trong bài học đầu tiên này, bạn sẽ được làm quen với ngôn ng
 
 ### Kết quả
 
-Sau khi đã nạp code thành công ...  
-... hình dự án hoạt động
+[![](/ex/less01/image/BAI1.png)](https://youtu.be/suhNl-qUmgw)
 
 ### Bài tập thêm
 
@@ -70,4 +69,6 @@ Thay vì mỗi lần nhấn nút 1 cái, là đèn LED thay đổi trạng thái
 
 ## Bài viết liên quan
 
-...
+- [MakerEdu Creator Kit for mBlock](/README.md)
+- [Bài 2: Điều khiển độ sáng đèn Led](/ex/less02/README.md)
+- [Bài 3: Chống trộm ngăn kéo](/ex/less03/README.md)
