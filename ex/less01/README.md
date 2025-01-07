@@ -60,9 +60,6 @@ Trong bài học đầu tiên này, bạn sẽ được làm quen với ngôn ng
 
 ### Kết quả
 
-<div align="center">
-    <video src="https://github.com/MinhKhanh614/MakerEdu-Creator-Kit-for-mBlock/blob/main/ex/less01/BAI1.mp4" alt="" height=200/>
-</div>
 
 
 
@@ -73,4 +70,6 @@ Thay vì mỗi lần nhấn nút 1 cái, là đèn LED thay đổi trạng thái
 
 ## Bài viết liên quan
 
-...
+- [MakerEdu Creator Kit for mBlock](/README.md)
+- [Bài 2: Điều khiển độ sáng đèn Led](/ex/less02/README.md)
+- [Bài 3: Chống trộm ngăn kéo](/ex/less03/README.md)
