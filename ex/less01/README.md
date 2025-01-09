@@ -61,7 +61,7 @@ Trong bài học đầu tiên này, bạn sẽ được làm quen với ngôn ng
 ### Kết quả
 
 <div align="center">
-    <video src="https://github.com/epcbtech/archery-game/assets/54855481/d493703c-bf5b-4fd2-ae04-b86784a01231" alt="epcb archery game" height=200/>
+    <video src="https://github.com/MinhKhanh614/MinhKhanh614.github.io/blob/main/videos/BAI1.mp4" alt="epcb archery game" height=200/>
 </div>
 
 ### Bài tập thêm
