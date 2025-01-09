@@ -60,7 +60,9 @@ Trong bài học đầu tiên này, bạn sẽ được làm quen với ngôn ng
 
 ### Kết quả
 
-[![](/ex/less01/image/BAI1.png)](https://youtu.be/suhNl-qUmgw)
+<div align="center">
+    <video src="https://github.com/epcbtech/archery-game/assets/54855481/d493703c-bf5b-4fd2-ae04-b86784a01231" alt="epcb archery game" height=200/>
+</div>
 
 ### Bài tập thêm
 
