@@ -59,8 +59,8 @@ Trong bài học đầu tiên này, bạn sẽ được làm quen với ngôn ng
     - Nếu **"led"** khác `0` (bằng `1`), tức đèn LED đang bật. Lúc này lưu **"led"** bằng `0` và cho chân D10 (LED) xuất tín hiệu `LOW`, làm tắt đèn LED.
 
 ### Kết quả
-[BAI1.webm](https://github.com/user-attachments/assets/2b19da8d-537f-479c-acc2-e317cbcc7292)
 
+[BAI1.webm](https://github.com/user-attachments/assets/2b19da8d-537f-479c-acc2-e317cbcc7292)
 
 ### Bài tập thêm
 
