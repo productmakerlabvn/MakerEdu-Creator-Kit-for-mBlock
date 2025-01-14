@@ -92,17 +92,11 @@ Bên trong khối **[forever]**:
 
 ### Kết quả
 
-Sau khi đã nạp code thành công ...
 
-![hình dự án hoạt động](project_image.png)
 
 ## Bài tập thêm
 
 - Thử một chút điều chỉnh, bạn hãy thử làm một bộ thùng rác thông minh, khi có người đứng gần mới mở nắp, và tự đóng nắp lại khi người rời đi.
-
-## Tài liệu tham khảo
-
-... link down code mẫu
 
 ## Bài viết liên quan
 
