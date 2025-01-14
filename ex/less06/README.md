@@ -44,7 +44,7 @@ Trên mạch MakerEdu Creator bạn tìm đến cụm chân cắm Servo có 3 m�
 
 ### Chương trình
 
-- Download file code **"Bai_6.mblock"**.
+- [Download file code "Bai6.mblock".](/ex/less06/mBlock5/Bai6.mblock)
 - Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
 - Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
 

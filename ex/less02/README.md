@@ -32,7 +32,7 @@ Không chỉ làm bật tắt đèn LED, thiết bị này còn cho phép bạn 
 
 ### Chương trình
 
-- Download file code **"Bai_2.mblock"**.
+- [Download file code "Bai2.mblock".](/ex/less02/mBlock5/Bai2.mblock)
 - Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
 - Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
 

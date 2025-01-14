@@ -40,7 +40,7 @@ Mỗi khi có ai đó tự ý mở hộc tủ của bạn, còi sẽ bật cản
 
 ### Chương trình
 
-- Download file code **"Bai_3.mblock"**.
+- [Download file code "Bai3.mblock".](/ex/less03/mBlock5/Bai3.mblock)
 - Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
 - Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
 

@@ -34,7 +34,7 @@ Sẽ có 3 mức cảnh báo từ "Chú ý" đến "Cảnh báo" và cuối cùn
 
 ### Chương trình
 
-- Download file code **"Bai_7.mblock"**.
+- [Download file code "Bai7.mblock".](/ex/less07/mBlock5/Bai7.mblock)
 - Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
 - Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
 

@@ -36,7 +36,7 @@ Với tính năng này các bạn có thể sử dụng cho nhiều ứng dụng
 
 ### Chương trình
 
-- Download file code **"Bai_4.mblock"**.
+- [Download file code "Bai4.mblock".](/ex/less04/mBlock5/Bai4.mblock)
 - Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
 - Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
 

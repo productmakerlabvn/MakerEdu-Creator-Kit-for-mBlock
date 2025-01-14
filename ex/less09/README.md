@@ -38,7 +38,7 @@ Trong bài này, bạn sẽ học cách tạo các khối nhạc của riêng m�
 
 ### Chương trình
 
-- Download file code **"Bai_9.mblock"**.
+- [Download file code "Bai9.mblock".](/ex/less09/mBlock5/Bai9.mblock)
 - Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
 - Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
 
