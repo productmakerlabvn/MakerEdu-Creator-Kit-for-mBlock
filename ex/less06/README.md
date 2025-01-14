@@ -97,9 +97,9 @@ Nhân vật Bat sẽ thông báo cho bạn biết trạng thái hiện tại c�
 
 ### Kết quả
 
-Sau khi đã nạp code thành công ...
 
-![hình dự án hoạt động](project_image.png)
+https://github.com/user-attachments/assets/3f12233d-4499-4a48-81a0-8a97669547a8
+
 
 ## Bài tập thêm
 
