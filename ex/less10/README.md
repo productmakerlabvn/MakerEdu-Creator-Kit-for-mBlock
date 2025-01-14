@@ -78,17 +78,11 @@ Bên trong khối **[forever]**.
 
 ### Kết quả
 
-Sau khi đã nạp code thành công ...
-
-![hình dự án hoạt động](project_image.png)
 
 ## Bài tập thêm
 
 - Tăng thêm số note nhạc, chẳng hạn các note thăng, giáng giữa các note cơ bản. Bạn cũng có thể mở rộng thêm ra nhiều note nữa cũng được.
 
-## Tài liệu tham khảo
-
-... link down code mẫu
 
 ## Bài viết liên quan
 
