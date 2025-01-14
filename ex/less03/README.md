@@ -2,6 +2,8 @@
 
 ## Mô tả dự án
 
+![](/ex/less03/image/BAI3.png)
+
 Dùng cảm biến ánh sáng quang trở phát hiện mở tủ bật báo động bằng còi Buzzer, hiển thị giá trị cảm biến lên sprite ...
 
 Giả sử bạn có một ngăn hộp tủ bí mật, chứa những món đồ bạn yêu thích, không muốn bị mấy đứa em quậy phá.

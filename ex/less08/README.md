@@ -2,6 +2,8 @@
 
 ## Mô tả dự án
 
+![](/ex/less08/image/BAI8.png)
+
 Dùng cảm biến siêu âm kết hợp với còi Buzzer và động cơ Servo để phát hiện xâm nhập.
 
 Bài này bạn sẽ dùng thêm động cơ Servo kết hợp với cảm biến Siêu âm và còi báo.

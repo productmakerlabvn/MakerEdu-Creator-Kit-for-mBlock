@@ -2,7 +2,7 @@
 
 ## Mô tả dự án
 
-... hình thumnail dự án
+![](/ex/less01/image/BAI1.png)
 
 Trong bài học đầu tiên này, bạn sẽ được làm quen với ngôn ngữ lập trình kéo thả khối mBlock qua dự án điều khiển bật tắt đèn LED bằng nút nhấn.
 

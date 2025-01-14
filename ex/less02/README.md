@@ -2,6 +2,8 @@
 
 ## Mô tả dự án
 
+![](/ex/less02/image/BAI2.png)
+
 Tiếp nối bài học trước, trong bài này các bạn cũng sẽ làm dự án điều khiển đèn LED, nhưng dùng biến trở điều khiển.
 
 Không chỉ làm bật tắt đèn LED, thiết bị này còn cho phép bạn điều khiển được độ sáng đèn LED theo ý muốn.

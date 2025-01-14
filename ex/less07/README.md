@@ -2,6 +2,8 @@
 
 ## Mô tả dự án
 
+![](/ex/less07/image/BAI7.png)
+
 Trong bài này, ta sẽ nâng độ khó sử dụng cảm biến siêu âm lên hơn nữa.
 
 Dựa theo giá trị khoảng cách mà cảm biến trả về. Bạn sẽ làm một bộ cảnh báo cho xe ở bãi đậu.

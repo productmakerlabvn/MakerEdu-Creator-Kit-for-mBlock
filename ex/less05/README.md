@@ -2,6 +2,8 @@
 
 ## Mô tả dự án
 
+![](/ex/less05/image/BAI5.png)
+
 Trong bài này, bạn sẽ làm quen với một thiết bị mới tên là động cơ RC Servo. Thiết bị này có tính năng đặc biệt chỗ bạn có thể điều khiến góc xoay của thiết bị bao nhiêu độ theo ý muốn cũng được, giới hạn trong phạm vi từ 0 độ đến 180 độ.
 
 Với khả năng này của Servo, bạn sẽ được hướng dẫn làm một bộ đồng hồ đếm ngược.
@@ -15,6 +17,8 @@ Servo sẽ quay kim đồng hồ từng giây, cho đến khi đếm xong.
 ## Các bước thực hiện
 
 ### Danh sách thiết bị
+
+
 
 - 1x [Mạch MakerEdu Creator](https://www.makerlab.vn/creator)
 - 1x [Cáp USB-C](https://hshop.vn/cap-usb-type-c)

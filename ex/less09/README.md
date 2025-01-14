@@ -2,6 +2,8 @@
 
 ## Mô tả dự án
 
+![](/ex/less09/image/BAI9.png)
+
 Nhấn nút nhấn để bật 1 bài nhạc bất kỳ bằng còi Buzzer.
 
 Trong bài này, bạn sẽ làm một hộp nhạc. Sử dụng biến trở để xoay nút chọn bài nhạc muốn phát.

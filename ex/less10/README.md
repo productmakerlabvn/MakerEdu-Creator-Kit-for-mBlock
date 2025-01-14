@@ -2,6 +2,8 @@
 
 ## Mô tả dự án
 
+![](/ex/less10/image/BAI10.png)
+
 Đàn nhạc bằng không khí, tại sao không.
 
 Bằng cách sử dụng cảm biến siêu âm, ta có thể chọn từng vùng khoảng cách để phát note nhạc mình muốn.

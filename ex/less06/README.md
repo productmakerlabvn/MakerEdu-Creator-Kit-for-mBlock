@@ -2,6 +2,8 @@
 
 ## Mô tả dự án
 
+![](/ex/less06/image/BAI6.png)
+
 Trong bài này bạn sẽ làm quen với một cảm biến mới, là cảm biến siêu âm.
 
 Cảm biến này có thể đo khoảng cách giữa vật thể phía trước đến cảm biến, bằng cách dùng nguyên lý phản xạ sóng.

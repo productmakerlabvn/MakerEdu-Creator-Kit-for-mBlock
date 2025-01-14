@@ -2,6 +2,8 @@
 
 ## Mô tả dự án
 
+![](/ex/less04/image/BAI4.png)
+
 Ở những bài trước bạn đã học cách điều khiển thiết bị, cụ thể ở đây là đèn LED theo cách thao tác bằng tay lên các thiết bị nhận biết như nút nhấn hay biến trở.
 
 Trong bài này bạn sẽ làm một dự án điều khiển thiết bị hoàn toàn tự động. Cũng dùng cảm biến ánh sáng để điều khiển độ sáng của LED theo môi trường xung quanh.
