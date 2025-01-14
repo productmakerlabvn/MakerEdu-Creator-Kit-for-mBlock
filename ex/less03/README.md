@@ -65,9 +65,8 @@ Chương trình hoạt động:
 
 ### Kết quả
 
-Sau khi đã nạp code thành công ...
+https://github.com/user-attachments/assets/4f3150e7-ae48-43ee-a24c-812d313f6532
 
-![hình dự án hoạt động](project_image.png)
 
 ## Bài tập thêm
 
