@@ -94,6 +94,10 @@ Bên trong khối **[forever]**:
 
 
 
+https://github.com/user-attachments/assets/fa75f79f-149a-429b-a36a-2d347cc569f5
+
+
+
 ## Bài tập thêm
 
 - Thử một chút điều chỉnh, bạn hãy thử làm một bộ thùng rác thông minh, khi có người đứng gần mới mở nắp, và tự đóng nắp lại khi người rời đi.
