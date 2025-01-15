@@ -74,17 +74,16 @@ Bên trong khối **[forever]**.
 
 ### Kết quả
 
-Sau khi đã nạp code thành công ...
 
-![hình dự án hoạt động](project_image.png)
+
+https://github.com/user-attachments/assets/da6f1393-793a-43f0-8903-8c66b4419006
+
+
 
 ## Bài tập thêm
 
 - Tạo thêm 1 bài nhạc vào bộ hộp nhạc nào (cung cấp bảng Note nhạc và thời gian phát mỗi nốt nhạc), bài nhạc này là của Mario.
 
-## Tài liệu tham khảo
-
-... link down code mẫu
 
 ## Bài viết liên quan
 
