@@ -84,19 +84,16 @@ Chương trình hoạt động:
 
 ### Kết quả
 
-Sau khi đã nạp code thành công ...
 
-![hình dự án hoạt động](project_image.png)
+https://github.com/user-attachments/assets/892d0141-8cc3-4fdc-8eae-29eb5f0cafce
+
+
 
 ## Bài tập thêm
 
 - Dùng bìa cartoon để làm mặt đồng hồ, vẽ lên mặt bìa các dấu gạch tương ứng cho từng giây, và vẽ lên các con số để mình dễ xem giờ. Thiết kế các chỗ để lắp đặt các thiết bị khác như nút nhấn hay biến trở làm thành một hộp kín. Thế là bạn đã có một bộ đếm xịn xò của riêng mình rồi đó. Trang trí thêm trên hộp với bất kì hình vẽ nào bạn thích nhé.
 - Dùng thêm còi báo, để nâng cấp bộ này nào. Chẳng hạn như khi bộ đếm bắt đầu và kết thúc còi sẽ báo tick tick để biết nè. Hay khi chỉ còn vài giây, từ 10s chẳng hạn, nhịp còi sẽ tăng nhanh dần.
 - Thay vì chỉnh được trong 1 phút, bạn thử mở rộng lên 5 phút, lên 10 phút, hay cả 30 phút thử xem.
-
-## Tài liệu tham khảo
-
-... link down code mẫu
 
 ## Bài viết liên quan
 
