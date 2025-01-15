@@ -79,6 +79,10 @@ Bên trong khối **[forever]**.
 ### Kết quả
 
 
+https://github.com/user-attachments/assets/05909f8c-8dc3-4dda-a92a-e3c2e6f119a9
+
+
+
 ## Bài tập thêm
 
 - Tăng thêm số note nhạc, chẳng hạn các note thăng, giáng giữa các note cơ bản. Bạn cũng có thể mở rộng thêm ra nhiều note nữa cũng được.
