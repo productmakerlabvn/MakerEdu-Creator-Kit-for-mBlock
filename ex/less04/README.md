@@ -61,6 +61,10 @@ Chương trình hoạt động:
 
 ### Kết quả
 
+
+https://github.com/user-attachments/assets/7f6807d2-c00f-40e3-b3a0-d992a396cbf4
+
+
 ## Bài tập thêm
 
 - Sẵn ôn lại bài cũ đã học trước đó. Bạn thử kết hợp thêm nút nhấn và biến trở để tích hợp tính năng cho hệ thống đèn của mình nào. Với nút nhấn để thao tác chuyển đổi chế độ **"AUTO"** và **"MANUAL"**. Nếu ở chế độ tự động, thì đèn LED hoạt động dựa theo giá trị của cảm biến. Còn ở chế độ thủ công, bạn có thể dùng biến trở để điều khiển độ sáng đèn LED theo ý mình.
