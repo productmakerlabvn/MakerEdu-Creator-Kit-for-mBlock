@@ -58,6 +58,9 @@ Trên mạch MakerEdu Creator bạn tìm đến cụm chân cắm Servo có 3 m�
 #### Blocks Devices:
 
 ![Creator mBlock Bai 5](/ex/less05/image/Creator_mBlock_Bai_5.png)
+![spritesBear](/ex/less05/image/spritesBear.png)
+![spritesBird](/ex/less05/image/spritesBird.png)
+![spritesPanda](/ex/less05/image/spritesPanda.png)
 
 ### Giải thích code
 

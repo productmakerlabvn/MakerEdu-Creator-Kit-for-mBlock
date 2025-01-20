@@ -44,6 +44,9 @@ Sẽ có 3 mức cảnh báo từ "Chú ý" đến "Cảnh báo" và cuối cùn
 
 ![Creator mBlock Bai 7](/ex/less07/image/825px-Creator_mBlock_Bai_7.png)
 
+![spritesBat](/ex/less07/image/spritesBat.png)
+![spritesPanda](/ex/less07/image/spritesPanda.png)
+
 ### Giải thích code
 
 Hiệu ứng âm thanh từ khối **[set Digital port _ , HIGH _ (s), LOW _ (s), then repeat forever]**:

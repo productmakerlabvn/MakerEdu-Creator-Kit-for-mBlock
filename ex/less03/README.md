@@ -49,6 +49,9 @@ Mỗi khi có ai đó tự ý mở hộc tủ của bạn, còi sẽ bật cản
 #### Blocks Devices
 
 ![Creator mBlock Bai 3](/ex/less03/image/Creator_mBlock_Bai_3.png)
+![spritesPanda](/ex/less03/image/spritesPanda.png)
+![spritesBird](/ex/less03/image/spritesBird.png)
+![spriteSheep](/ex/less03/image/spritesSheep.png)
 
 ### Giải thích code
 

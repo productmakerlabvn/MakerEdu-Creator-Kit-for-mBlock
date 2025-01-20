@@ -41,6 +41,8 @@ Không chỉ làm bật tắt đèn LED, thiết bị này còn cho phép bạn 
 #### Blocks Devices:
 
 ![Creator mBlock Bai 2](/ex/less02/image/Creator_mBlock_Bai_2.png)
+![spritesPanda](/ex/less02/image/spritesPanda.png)
+![spritesBird](/ex/less02/image/spritesBird.png)
 
 ### Giải thích code
 

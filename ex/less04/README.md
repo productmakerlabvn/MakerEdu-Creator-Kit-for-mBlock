@@ -44,7 +44,14 @@ Với tính năng này các bạn có thể sử dụng cho nhiều ứng dụng
 
 #### Blocks Devices:
 
-![Creator mBlock Bai 4](/ex/less04/image/750px-Creator_mBlock_Bai_4.png)
+#### Blocks Devices:
+
+#### Blocks Devices
+
+![Creator mBlock Bai 6 1](/ex/less06/image/825px-Creator_mBlock_Bai_6_1.png)
+![Creator mBlock Bai 6 2](/ex/less06/image/200px-Creator_mBlock_Bai_6_2.png)
+![spritesBat](/ex/less06/image/spritesBat.png)
+![spritesPanda](/ex/less06/image/spritesPanda.png)
 
 ### Giải thích code
 
