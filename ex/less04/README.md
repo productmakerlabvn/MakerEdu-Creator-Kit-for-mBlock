@@ -69,7 +69,7 @@ Chương trình hoạt động:
 ### Kết quả
 
 
-https://github.com/user-attachments/assets/7f6807d2-c00f-40e3-b3a0-d992a396cbf4
+https://github.com/user-attachments/assets/7a31faa9-5b39-4856-ae33-1a73bcfb5a94
 
 
 ## Bài tập thêm
