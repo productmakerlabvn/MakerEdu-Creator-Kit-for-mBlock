@@ -19,11 +19,12 @@ Không chỉ làm bật tắt đèn LED, thiết bị này còn cho phép bạn 
 
 ### Chuẩn bị trước dự án
 
-- Tải và cài đặt phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Driver, cấu hình cho Mạch MakerEdu Creator trên phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Extension MakerEdu Hardware trên phần mềm mblock theo hướng dẫn **[tại đây]**.
+[Hướng dẫn nạp chương trình & cài đặt Extension trên mBlock với các phần cứng MakerEdu](https://github.com/makerlabvn/mBlock-MakerEdu-Creator)
+
 - Kết nối mạch MakerEdu Creator với máy tính qua cáp USB-C sẽ thấy đèn nguồn (PWR) trên mạch phát sáng.
-- Hiểu cấu trúc của một chương trình trên phầm mềm mBlock và **"ngôn ngữ lập trình kéo thả khối"** theo hướng dẫn **[tại đây]**.
+- Hiểu cấu trúc của một chương trình trên phầm mềm mBlock và "ngôn ngữ lập trình kéo thả khối" theo hướng dẫn [tại đây](https://support.makeblock.com/hc/en-us/articles/12738783754903-Block-Reference).
+
+![](/ex/less02/image/700px-Connect_MakerEdu_Creator_with_Computer_by_USB-C_cable.jpg)
 
 ### Sơ đồ kết nối
 
@@ -38,12 +39,18 @@ Không chỉ làm bật tắt đèn LED, thiết bị này còn cho phép bạn 
 - Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
 - Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
 
-#### Blocks Devices:
+#### Blocks Devices
+
 ![Creator mBlock Bai 2](/ex/less02/image/Creator_mBlock_Bai_2.png)
-#### Blocks Sprites:
-##### Panda:
+
+#### Blocks Sprites
+
+##### Panda
+
 ![spritesPanda](/ex/less02/image/spritesPanda.png)
-##### Bird:
+
+##### Bird
+
 ![spritesBird](/ex/less02/image/spritesBird.png)
 
 ### Giải thích code
@@ -63,23 +70,21 @@ Chương trình hoạt động:
 - Vậy nên nếu nguồn điện áp lý tưởng cấp cho bo mạch là đúng chính xác 5V, thì giá trị lớn nhất đọc được từ module Biến trở sẽ là 676, tương ứng mức điện áp 3,3V.
 - Nhưng thật tế nguồn điện chúng ta sử dụng cấp cho thiết bị, mỗi bạn mỗi khác. Thường dao động quanh mức 5V, có thể là 4,9V cũng có thể là 5,1V chẳng hạn. Cho nên bước lọc kết quả trên là rất quan trọng!
 
-#### Chức năng khối **[constrain...]**:
+#### Chức năng khối **[constrain...]**
 
 - Như cái tên của khối, sự ràng buộc. Trong chương trình này, khối sẽ kiểm tra giá trị trong biến **"pot"**.
   - Nếu giá trị nhỏ hơn 0, sẽ chỉnh lại biến **"pot"** giá trị 0.
   - Nếu giá trị lớn hơn 676, sẽ lưu lại vào biến **"pot"** giá trị 676.
   - Còn nếu giá trị **"pot"** trong khoảng **"từ 0 đến 676"**, thì vẫn giữ nguyên giá trị của biến.
 
-#### Chức năng khối **[map...]**:
+#### Chức năng khối **[map...]**
 
 - Khối này có chức năng ánh xạ một giá trị từ thang đo này sang một giá trị tương ứng ở thang đo khác.
 - Trong chương trình này, khối sẽ ánh xạ giá trị biến **"pot"** trong thang đo Analog (0 - 676) sang một giá trị tương ứng ở thang đo % (0 - 100) rồi lưu vào biến **"led"**.
 
 ### Kết quả
 
-
-https://github.com/user-attachments/assets/e94700e5-33d4-4acf-8b0d-f24bdb496a77
-
+<https://github.com/user-attachments/assets/e94700e5-33d4-4acf-8b0d-f24bdb496a77>
 
 ## Bài tập thêm
 
