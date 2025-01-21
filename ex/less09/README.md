@@ -24,11 +24,12 @@ Trong bài này, bạn sẽ học cách tạo các khối nhạc của riêng m�
 
 ### Chuẩn bị trước dự án
 
-- Tải và cài đặt phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Driver, cấu hình cho Mạch MakerEdu Creator trên phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Extension MakerEdu Hardware trên phần mềm mblock theo hướng dẫn **[tại đây]**.
+[Hướng dẫn nạp chương trình & cài đặt Extension trên mBlock với các phần cứng MakerEdu](https://github.com/makerlabvn/mBlock-MakerEdu-Creator)
+
 - Kết nối mạch MakerEdu Creator với máy tính qua cáp USB-C sẽ thấy đèn nguồn (PWR) trên mạch phát sáng.
-- Hiểu cấu trúc của một chương trình trên phầm mềm mBlock và **"ngôn ngữ lập trình kéo thả khối"** theo hướng dẫn **[tại đây]**.
+- Hiểu cấu trúc của một chương trình trên phần mềm mBlock và "ngôn ngữ lập trình kéo thả khối" theo hướng dẫn [tại đây](https://support.makeblock.com/hc/en-us/articles/12738783754903-Block-Reference).
+
+![](/ex/less03/image/700px-Connect_MakerEdu_Creator_with_Computer_by_USB-C_cable.jpg)
 
 ### Sơ đồ kết nối
 
@@ -42,7 +43,7 @@ Trong bài này, bạn sẽ học cách tạo các khối nhạc của riêng m�
 
 - [Download file code "Bai9.mblock".](/ex/less09/mBlock5/Bai9.mblock)
 - Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
-- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
+- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn [tại đây](https://github.com/makerlabvn/mBlock-MakerEdu-Creator)..
 
 #### Blocks Devices
 
@@ -84,14 +85,11 @@ Bên trong khối **[forever]**.
 
 ### Kết quả
 
-
-https://github.com/user-attachments/assets/3c2d920d-42ab-4b80-9f49-91205921e69a
-
+<https://github.com/user-attachments/assets/3c2d920d-42ab-4b80-9f49-91205921e69a>
 
 ## Bài tập thêm
 
 - Tạo thêm 1 bài nhạc vào bộ hộp nhạc nào (cung cấp bảng Note nhạc và thời gian phát mỗi nốt nhạc), bài nhạc này là của Mario.
-
 
 ## Bài viết liên quan
 
