@@ -75,9 +75,8 @@ Chương trình hoạt động:
 
 ### Kết quả
 
- 
 
-https://github.com/user-attachments/assets/c313d665-d923-4eac-8a68-348782ff823a
+https://github.com/user-attachments/assets/e94700e5-33d4-4acf-8b0d-f24bdb496a77
 
 
 ## Bài tập thêm
