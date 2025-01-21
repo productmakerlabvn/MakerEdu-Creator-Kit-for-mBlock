@@ -77,9 +77,7 @@ Bên trong khối **[forever]**.
 ### Kết quả
 
 
-
-https://github.com/user-attachments/assets/da6f1393-793a-43f0-8903-8c66b4419006
-
+https://github.com/user-attachments/assets/3c2d920d-42ab-4b80-9f49-91205921e69a
 
 
 ## Bài tập thêm
