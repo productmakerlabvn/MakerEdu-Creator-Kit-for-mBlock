@@ -57,7 +57,7 @@ Ta dùng còi để phát các note nhạc đó. Mình sẽ chọn ra 7 note nh�
 
 ##### Panda
 
-<img src="/ex/less10/image/spritesPanda.png" width="700" height="300"> 
+<img src="/ex/less10/image/spritesPanda.png" width="600" height="177"> 
 
 ### Giải thích code
 
