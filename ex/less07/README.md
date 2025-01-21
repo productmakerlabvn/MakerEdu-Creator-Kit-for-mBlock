@@ -71,8 +71,7 @@ Bên trong khối **[forever]**.
 ### Kết quả
 
 
-https://github.com/user-attachments/assets/654e9534-6fa8-4c74-a1d8-1a1efeb79ce2
-
+https://github.com/user-attachments/assets/71321cd7-caa2-44dc-abf8-5984c8f99b0c
 
 
 ## Bài tập thêm
