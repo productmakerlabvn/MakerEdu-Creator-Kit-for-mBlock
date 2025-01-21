@@ -2,6 +2,8 @@
 
 ## Mô tả dự án
 
+![](/ex/less08/image/BAI8.png)
+
 Dùng cảm biến siêu âm kết hợp với còi Buzzer và động cơ Servo để phát hiện xâm nhập.
 
 Bài này bạn sẽ dùng thêm động cơ Servo kết hợp với cảm biến Siêu âm và còi báo.
@@ -24,11 +26,12 @@ Khi cảm biến phát hiện có vật xuất hiện trong vùng quét sẽ b�
 
 ### Chuẩn bị trước dự án
 
-- Tải và cài đặt phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Driver, cấu hình cho Mạch MakerEdu Creator trên phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Extension MakerEdu Hardware trên phần mềm mblock theo hướng dẫn **[tại đây]**.
+[Hướng dẫn nạp chương trình & cài đặt Extension trên mBlock với các phần cứng MakerEdu](https://github.com/makerlabvn/mBlock-MakerEdu-Creator)
+
 - Kết nối mạch MakerEdu Creator với máy tính qua cáp USB-C sẽ thấy đèn nguồn (PWR) trên mạch phát sáng.
-- Hiểu cấu trúc của một chương trình trên phầm mềm mBlock và **"ngôn ngữ lập trình kéo thả khối"** theo hướng dẫn **[tại đây]**.
+- Hiểu cấu trúc của một chương trình trên phần mềm mBlock và "ngôn ngữ lập trình kéo thả khối" theo hướng dẫn [tại đây](https://support.makeblock.com/hc/en-us/articles/12738783754903-Block-Reference).
+
+![](/ex/less03/image/700px-Connect_MakerEdu_Creator_with_Computer_by_USB-C_cable.jpg)
 
 ### Sơ đồ kết nối
 
@@ -47,14 +50,24 @@ Trên mạch MakerEdu Creator bạn tìm đến cụm chân cắm Servo có 3 m�
 
 ### Chương trình
 
-- Download file code **"Bai_8.mblock"**.
+- [Download file code "Bai8.mblock".](/ex/less08/mBlock5/Bai8.mblock)
 - Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
-- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
+- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn [tại đây](https://github.com/makerlabvn/mBlock-MakerEdu-Creator).
 
-#### Blocks Devices:
+#### Blocks Devices
 
 ![Creator mBlock Bai 8 1](/ex/less08/image/825px-Creator_mBlock_Bai_8_1.png)
 ![Creator mBlock Bai 8 2](/ex/less08/image/825px-Creator_mBlock_Bai_8_2.png)
+
+#### Blocks Sprites
+
+##### Bat
+
+<img src="/ex/less08/image/spritesBat.png" width="339" height="100">
+
+##### Panda
+
+<img src="/ex/less08/image/spritesPanda.png" width="339" height="100">
 
 ### Giải thích code
 
@@ -90,17 +103,13 @@ Bên trong khối **[forever]**:
 
 ### Kết quả
 
-Sau khi đã nạp code thành công ...
 
-![hình dự án hoạt động](project_image.png)
+https://github.com/user-attachments/assets/5015d2d4-47a6-4885-8533-b3a54064abc9
+
 
 ## Bài tập thêm
 
 - Thử một chút điều chỉnh, bạn hãy thử làm một bộ thùng rác thông minh, khi có người đứng gần mới mở nắp, và tự đóng nắp lại khi người rời đi.
-
-## Tài liệu tham khảo
-
-... link down code mẫu
 
 ## Bài viết liên quan
 

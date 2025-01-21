@@ -2,6 +2,8 @@
 
 ## Mô tả dự án
 
+![](/ex/less10/image/BAI10.png)
+
 Đàn nhạc bằng không khí, tại sao không.
 
 Bằng cách sử dụng cảm biến siêu âm, ta có thể chọn từng vùng khoảng cách để phát note nhạc mình muốn.
@@ -19,11 +21,12 @@ Ta dùng còi để phát các note nhạc đó. Mình sẽ chọn ra 7 note nh�
 
 ### Chuẩn bị trước dự án
 
-- Tải và cài đặt phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Driver, cấu hình cho Mạch MakerEdu Creator trên phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Extension MakerEdu Hardware trên phần mềm mblock theo hướng dẫn **[tại đây]**.
+[Hướng dẫn nạp chương trình & cài đặt Extension trên mBlock với các phần cứng MakerEdu](https://github.com/makerlabvn/mBlock-MakerEdu-Creator)
+
 - Kết nối mạch MakerEdu Creator với máy tính qua cáp USB-C sẽ thấy đèn nguồn (PWR) trên mạch phát sáng.
-- Hiểu cấu trúc của một chương trình trên phầm mềm mBlock và **"ngôn ngữ lập trình kéo thả khối"** theo hướng dẫn **[tại đây]**.
+- Hiểu cấu trúc của một chương trình trên phần mềm mBlock và "ngôn ngữ lập trình kéo thả khối" theo hướng dẫn [tại đây](https://support.makeblock.com/hc/en-us/articles/12738783754903-Block-Reference).
+
+![](/ex/less03/image/700px-Connect_MakerEdu_Creator_with_Computer_by_USB-C_cable.jpg)
 
 ### Sơ đồ kết nối
 
@@ -34,13 +37,27 @@ Ta dùng còi để phát các note nhạc đó. Mình sẽ chọn ra 7 note nh�
 
 ### Chương trình
 
-- Download file code **"Bai_10.mblock"**.
+- [Download file code "Bai10.mblock".](/ex/less10/mBlock5/Bai10.mblock)
 - Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
-- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
+- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn [tại đây](https://github.com/makerlabvn/mBlock-MakerEdu-Creator).
 
 #### Blocks Devices
 
 ![Creator mBlock Bai 10 1](/ex/less10/image/825px-Creator_mBlock_Bai_10.png)
+
+#### Blocks Sprites
+
+##### Bat
+
+<img src="/ex/less10/image/spritesBat.png" width="339" height="100">
+
+##### Fox
+
+<img src="/ex/less10/image/spritesFox.png" width="339" height="100">
+
+##### Panda
+
+<img src="/ex/less10/image/spritesPanda.png" width="339" height="100">
 
 ### Giải thích code
 
@@ -76,17 +93,14 @@ Bên trong khối **[forever]**.
 
 ### Kết quả
 
-Sau khi đã nạp code thành công ...
 
-![hình dự án hoạt động](project_image.png)
+https://github.com/user-attachments/assets/47e56139-610d-4efa-82ab-e548ba682cc1
+
 
 ## Bài tập thêm
 
 - Tăng thêm số note nhạc, chẳng hạn các note thăng, giáng giữa các note cơ bản. Bạn cũng có thể mở rộng thêm ra nhiều note nữa cũng được.
 
-## Tài liệu tham khảo
-
-... link down code mẫu
 
 ## Bài viết liên quan
 

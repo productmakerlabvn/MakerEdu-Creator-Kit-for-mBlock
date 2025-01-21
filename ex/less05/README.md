@@ -2,6 +2,8 @@
 
 ## Mô tả dự án
 
+![](/ex/less05/image/BAI5.png)
+
 Trong bài này, bạn sẽ làm quen với một thiết bị mới tên là động cơ RC Servo. Thiết bị này có tính năng đặc biệt chỗ bạn có thể điều khiến góc xoay của thiết bị bao nhiêu độ theo ý muốn cũng được, giới hạn trong phạm vi từ 0 độ đến 180 độ.
 
 Với khả năng này của Servo, bạn sẽ được hướng dẫn làm một bộ đồng hồ đếm ngược.
@@ -16,6 +18,8 @@ Servo sẽ quay kim đồng hồ từng giây, cho đến khi đếm xong.
 
 ### Danh sách thiết bị
 
+
+
 - 1x [Mạch MakerEdu Creator](https://www.makerlab.vn/creator)
 - 1x [Cáp USB-C](https://hshop.vn/cap-usb-type-c)
 - 1x [Mạch biến trở MKE-M04 potentiometer module](https://makerlab.vn/mkem04)
@@ -24,11 +28,12 @@ Servo sẽ quay kim đồng hồ từng giây, cho đến khi đếm xong.
 
 ### Chuẩn bị trước dự án
 
-- Tải và cài đặt phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Driver, cấu hình cho Mạch MakerEdu Creator trên phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Extension MakerEdu Hardware trên phần mềm mblock theo hướng dẫn **[tại đây]**.
+[Hướng dẫn nạp chương trình & cài đặt Extension trên mBlock với các phần cứng MakerEdu](https://github.com/makerlabvn/mBlock-MakerEdu-Creator)
+
 - Kết nối mạch MakerEdu Creator với máy tính qua cáp USB-C sẽ thấy đèn nguồn (PWR) trên mạch phát sáng.
-- Hiểu cấu trúc của một chương trình trên phầm mềm mBlock và **"ngôn ngữ lập trình kéo thả khối"** theo hướng dẫn **[tại đây]**.
+- Hiểu cấu trúc của một chương trình trên phầm mềm mBlock và "ngôn ngữ lập trình kéo thả khối" theo hướng dẫn [tại đây](https://support.makeblock.com/hc/en-us/articles/12738783754903-Block-Reference).
+
+![](/ex/less01/image/700px-Connect_MakerEdu_Creator_with_Computer_by_USB-C_cable.jpg)
 
 ### Sơ đồ kết nối
 
@@ -47,14 +52,27 @@ Trên mạch MakerEdu Creator bạn tìm đến cụm chân cắm Servo có 3 m�
 
 ### Chương trình
 
-- Download file code **"Bai_5.mblock"**.
+- [Download file code "Bai5.mblock".](/ex/less05/mBlock5/Bai5.mblock)
 - Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
-- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
+- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp - Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn [tại đây](https://github.com/makerlabvn/mBlock-MakerEdu-Creator).
 
-#### Blocks Devices:
+#### Blocks Devices
 
 ![Creator mBlock Bai 5](/ex/less05/image/Creator_mBlock_Bai_5.png)
 
+#### Blocks Sprites
+
+##### Bear
+
+<img src="/ex/less05/image/spritesBear.png" width="339" height="100">
+
+##### Bird
+
+<img src="/ex/less05/image/spritesBird.png" width="339" height="100">
+
+##### Panda
+
+<img src="/ex/less05/image/spritesPanda.png" width="339" height="100">
 ### Giải thích code
 
 Chương trình hoạt động:
@@ -80,19 +98,15 @@ Chương trình hoạt động:
 
 ### Kết quả
 
-Sau khi đã nạp code thành công ...
 
-![hình dự án hoạt động](project_image.png)
+https://github.com/user-attachments/assets/2b73b605-57ed-425e-96ec-852ef860db63
+
 
 ## Bài tập thêm
 
 - Dùng bìa cartoon để làm mặt đồng hồ, vẽ lên mặt bìa các dấu gạch tương ứng cho từng giây, và vẽ lên các con số để mình dễ xem giờ. Thiết kế các chỗ để lắp đặt các thiết bị khác như nút nhấn hay biến trở làm thành một hộp kín. Thế là bạn đã có một bộ đếm xịn xò của riêng mình rồi đó. Trang trí thêm trên hộp với bất kì hình vẽ nào bạn thích nhé.
 - Dùng thêm còi báo, để nâng cấp bộ này nào. Chẳng hạn như khi bộ đếm bắt đầu và kết thúc còi sẽ báo tick tick để biết nè. Hay khi chỉ còn vài giây, từ 10s chẳng hạn, nhịp còi sẽ tăng nhanh dần.
 - Thay vì chỉnh được trong 1 phút, bạn thử mở rộng lên 5 phút, lên 10 phút, hay cả 30 phút thử xem.
-
-## Tài liệu tham khảo
-
-... link down code mẫu
 
 ## Bài viết liên quan
 

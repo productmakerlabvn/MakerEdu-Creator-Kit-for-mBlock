@@ -2,6 +2,8 @@
 
 ## Mô tả dự án
 
+![](/ex/less07/image/BAI7.png)
+
 Trong bài này, ta sẽ nâng độ khó sử dụng cảm biến siêu âm lên hơn nữa.
 
 Dựa theo giá trị khoảng cách mà cảm biến trả về. Bạn sẽ làm một bộ cảnh báo cho xe ở bãi đậu.
@@ -19,11 +21,12 @@ Sẽ có 3 mức cảnh báo từ "Chú ý" đến "Cảnh báo" và cuối cùn
 
 ### Chuẩn bị trước dự án
 
-- Tải và cài đặt phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Driver, cấu hình cho Mạch MakerEdu Creator trên phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Extension MakerEdu Hardware trên phần mềm mblock theo hướng dẫn **[tại đây]**.
+[Hướng dẫn nạp chương trình & cài đặt Extension trên mBlock với các phần cứng MakerEdu](https://github.com/makerlabvn/mBlock-MakerEdu-Creator)
+
 - Kết nối mạch MakerEdu Creator với máy tính qua cáp USB-C sẽ thấy đèn nguồn (PWR) trên mạch phát sáng.
-- Hiểu cấu trúc của một chương trình trên phầm mềm mBlock và **"ngôn ngữ lập trình kéo thả khối"** theo hướng dẫn **[tại đây]**.
+- Hiểu cấu trúc của một chương trình trên phần mềm mBlock và "ngôn ngữ lập trình kéo thả khối" theo hướng dẫn [tại đây](https://support.makeblock.com/hc/en-us/articles/12738783754903-Block-Reference).
+
+![](/ex/less03/image/700px-Connect_MakerEdu_Creator_with_Computer_by_USB-C_cable.jpg)
 
 ### Sơ đồ kết nối
 
@@ -34,13 +37,23 @@ Sẽ có 3 mức cảnh báo từ "Chú ý" đến "Cảnh báo" và cuối cùn
 
 ### Chương trình
 
-- Download file code **"Bai_7.mblock"**.
+- [Download file code "Bai7.mblock".](/ex/less07/mBlock5/Bai7.mblock)
 - Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
-- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
+- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn [tại đây](https://github.com/makerlabvn/mBlock-MakerEdu-Creator).
 
 #### Blocks Devices
 
 ![Creator mBlock Bai 7](/ex/less07/image/825px-Creator_mBlock_Bai_7.png)
+
+#### Blocks Sprites
+
+##### Bat
+
+<img src="/ex/less07/image/spritesBat.png" width="339" height="100">
+
+##### Panda
+
+<img src="/ex/less07/image/spritesPanda.png" width="339" height="100">
 
 ### Giải thích code
 
@@ -65,17 +78,13 @@ Bên trong khối **[forever]**.
 
 ### Kết quả
 
-Sau khi đã nạp code thành công ...
 
-![hình dự án hoạt động](project_image.png)
+https://github.com/user-attachments/assets/71321cd7-caa2-44dc-abf8-5984c8f99b0c
+
 
 ## Bài tập thêm
 
 - Thử một chút điều chỉnh, bạn hãy thử làm một bộ thùng rác thông minh, khi có người đứng gần mới mở nắp, và tự đóng nắp lại khi người rời đi.
-
-## Tài liệu tham khảo
-
-... link down code mẫu
 
 ## Bài viết liên quan
 

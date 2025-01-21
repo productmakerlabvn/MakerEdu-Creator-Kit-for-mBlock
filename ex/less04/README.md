@@ -2,6 +2,8 @@
 
 ## Mô tả dự án
 
+![](/ex/less04/image/BAI4.png)
+
 Ở những bài trước bạn đã học cách điều khiển thiết bị, cụ thể ở đây là đèn LED theo cách thao tác bằng tay lên các thiết bị nhận biết như nút nhấn hay biến trở.
 
 Trong bài này bạn sẽ làm một dự án điều khiển thiết bị hoàn toàn tự động. Cũng dùng cảm biến ánh sáng để điều khiển độ sáng của LED theo môi trường xung quanh.
@@ -21,11 +23,12 @@ Với tính năng này các bạn có thể sử dụng cho nhiều ứng dụng
 
 ### Chuẩn bị trước dự án
 
-- Tải và cài đặt phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Driver, cấu hình cho Mạch MakerEdu Creator trên phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Extension MakerEdu Hardware trên phần mềm mblock theo hướng dẫn **[tại đây]**.
+[Hướng dẫn nạp chương trình & cài đặt Extension trên mBlock với các phần cứng MakerEdu](https://github.com/makerlabvn/mBlock-MakerEdu-Creator)
+
 - Kết nối mạch MakerEdu Creator với máy tính qua cáp USB-C sẽ thấy đèn nguồn (PWR) trên mạch phát sáng.
-- Hiểu cấu trúc của một chương trình trên phầm mềm mBlock và **"ngôn ngữ lập trình kéo thả khối"** theo hướng dẫn **[tại đây]**.
+- Hiểu cấu trúc của một chương trình trên phần mềm mBlock và **"ngôn ngữ lập trình kéo thả khối"** theo hướng dẫn [tại đây](https://github.com/makerlabvn/mBlock-MakerEdu-Creator).
+
+![](/ex/less04/image/700px-Connect_MakerEdu_Creator_with_Computer_by_USB-C_cable.jpg)
 
 ### Sơ đồ kết nối
 
@@ -36,14 +39,24 @@ Với tính năng này các bạn có thể sử dụng cho nhiều ứng dụng
 
 ### Chương trình
 
-- Download file code **"Bai_4.mblock"**.
-- Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
-- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
+- [Download file code "Bai4.mblock".](/ex/less04/mBlock5/Bai4.mblock)
+- Mở phần mềm mBlock, vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
+- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn [tại đây](https://github.com/makerlabvn/mBlock-MakerEdu-Creator).
 
-#### Blocks Devices:
+#### Blocks Devices
 
-![Creator mBlock Bai 4](/ex/less04/image/750px-Creator_mBlock_Bai_4.png)
+![Creator mBlock Bai 6 1](/ex/less06/image/825px-Creator_mBlock_Bai_6_1.png)
+![Creator mBlock Bai 6 2](/ex/less06/image/200px-Creator_mBlock_Bai_6_2.png)
 
+#### Blocks Sprites
+
+##### Bat
+
+<img src="/ex/less06/image/spritesBat.png" width="339" height="100">
+
+##### Panda
+
+<img src="/ex/less06/image/spritesPanda.png" width="339" height="100">
 ### Giải thích code
 
 Chương trình hoạt động:
@@ -59,17 +72,14 @@ Chương trình hoạt động:
 
 ### Kết quả
 
-Sau khi đã nạp code thành công ...
 
-![hình dự án hoạt động](project_image.png)
+https://github.com/user-attachments/assets/7a31faa9-5b39-4856-ae33-1a73bcfb5a94
+
 
 ## Bài tập thêm
 
 - Sẵn ôn lại bài cũ đã học trước đó. Bạn thử kết hợp thêm nút nhấn và biến trở để tích hợp tính năng cho hệ thống đèn của mình nào. Với nút nhấn để thao tác chuyển đổi chế độ **"AUTO"** và **"MANUAL"**. Nếu ở chế độ tự động, thì đèn LED hoạt động dựa theo giá trị của cảm biến. Còn ở chế độ thủ công, bạn có thể dùng biến trở để điều khiển độ sáng đèn LED theo ý mình.
 
-## Tài liệu tham khảo
-
-... link down code mẫu
 
 ## Bài viết liên quan
 

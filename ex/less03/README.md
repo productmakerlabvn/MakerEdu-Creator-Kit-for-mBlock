@@ -2,6 +2,8 @@
 
 ## Mô tả dự án
 
+![](/ex/less03/image/BAI3.png)
+
 Dùng cảm biến ánh sáng quang trở phát hiện mở tủ bật báo động bằng còi Buzzer, hiển thị giá trị cảm biến lên sprite ...
 
 Giả sử bạn có một ngăn hộp tủ bí mật, chứa những món đồ bạn yêu thích, không muốn bị mấy đứa em quậy phá.
@@ -25,11 +27,12 @@ Mỗi khi có ai đó tự ý mở hộc tủ của bạn, còi sẽ bật cản
 
 ### Chuẩn bị trước dự án
 
-- Tải và cài đặt phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Driver, cấu hình cho Mạch MakerEdu Creator trên phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Extension MakerEdu Hardware trên phần mềm mblock theo hướng dẫn **[tại đây]**.
+[Hướng dẫn nạp chương trình & cài đặt Extension trên mBlock với các phần cứng MakerEdu](https://github.com/makerlabvn/mBlock-MakerEdu-Creator)
+
 - Kết nối mạch MakerEdu Creator với máy tính qua cáp USB-C sẽ thấy đèn nguồn (PWR) trên mạch phát sáng.
-- Hiểu cấu trúc của một chương trình trên phầm mềm mBlock và **"ngôn ngữ lập trình kéo thả khối"** theo hướng dẫn **[tại đây]**.
+- Hiểu cấu trúc của một chương trình trên phần mềm mBlock và "ngôn ngữ lập trình kéo thả khối" theo hướng dẫn [tại đây](https://support.makeblock.com/hc/en-us/articles/12738783754903-Block-Reference).
+
+![](/ex/less03/image/700px-Connect_MakerEdu_Creator_with_Computer_by_USB-C_cable.jpg)
 
 ### Sơ đồ kết nối
 
@@ -40,14 +43,27 @@ Mỗi khi có ai đó tự ý mở hộc tủ của bạn, còi sẽ bật cản
 
 ### Chương trình
 
-- Download file code **"Bai_3.mblock"**.
-- Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
-- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
+- [Download file code "Bai3.mblock".](/ex/less03/mBlock5/Bai3.mblock)
+- Mở phần mềm mBlock, vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
+- Kết nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn [tại đây](https://github.com/makerlabvn/mBlock-MakerEdu-Creator).
 
 #### Blocks Devices
 
 ![Creator mBlock Bai 3](/ex/less03/image/Creator_mBlock_Bai_3.png)
 
+#### Blocks Sprites
+
+##### Panda
+
+<img src="/ex/less03/image/spritesPanda.png" width="339" height="100">
+
+##### Bird
+
+<img src="/ex/less03/image/spritesBird.png" width="339" height="100">
+
+##### Sheep
+
+<img src="/ex/less03/image/spritesSheep.png" width="339" height="100">
 ### Giải thích code
 
 Chương trình hoạt động:
@@ -63,9 +79,9 @@ Chương trình hoạt động:
 
 ### Kết quả
 
-Sau khi đã nạp code thành công ...
 
-![hình dự án hoạt động](project_image.png)
+https://github.com/user-attachments/assets/83b55eee-9594-4ae6-83d6-4ab4c42cdec5
+
 
 ## Bài tập thêm
 

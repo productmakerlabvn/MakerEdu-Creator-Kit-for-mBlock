@@ -2,6 +2,8 @@
 
 ## Mô tả dự án
 
+![](/ex/less06/image/BAI6.png)
+
 Trong bài này bạn sẽ làm quen với một cảm biến mới, là cảm biến siêu âm.
 
 Cảm biến này có thể đo khoảng cách giữa vật thể phía trước đến cảm biến, bằng cách dùng nguyên lý phản xạ sóng.
@@ -21,11 +23,12 @@ Khi có người hay vật đến gần cửa, Servo sẽ quay là cửa mở t�
 
 ### Chuẩn bị trước dự án
 
-- Tải và cài đặt phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Driver, cấu hình cho Mạch MakerEdu Creator trên phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Extension MakerEdu Hardware trên phần mềm mblock theo hướng dẫn **[tại đây]**.
+[Hướng dẫn nạp chương trình & cài đặt Extension trên mBlock với các phần cứng MakerEdu](https://github.com/makerlabvn/mBlock-MakerEdu-Creator)
+
 - Kết nối mạch MakerEdu Creator với máy tính qua cáp USB-C sẽ thấy đèn nguồn (PWR) trên mạch phát sáng.
-- Hiểu cấu trúc của một chương trình trên phầm mềm mBlock và **"ngôn ngữ lập trình kéo thả khối"** theo hướng dẫn **[tại đây]**.
+- Hiểu cấu trúc của một chương trình trên phần mềm mBlock và "ngôn ngữ lập trình kéo thả khối" theo hướng dẫn [tại đây](https://support.makeblock.com/hc/en-us/articles/12738783754903-Block-Reference).
+
+![](/ex/less03/image/700px-Connect_MakerEdu_Creator_with_Computer_by_USB-C_cable.jpg)
 
 ### Sơ đồ kết nối
 
@@ -44,14 +47,24 @@ Trên mạch MakerEdu Creator bạn tìm đến cụm chân cắm Servo có 3 m�
 
 ### Chương trình
 
-- Download file code **"Bai_6.mblock"**.
+- [Download file code "Bai6.mblock".](/ex/less06/mBlock5/Bai6.mblock)
 - Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
-- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
+- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn [tại đây](https://github.com/makerlabvn/mBlock-MakerEdu-Creator).
 
 #### Blocks Devices
 
 ![Creator mBlock Bai 6 1](/ex/less06/image/825px-Creator_mBlock_Bai_6_1.png)
-![](/ex/less06/image/200px-Creator_mBlock_Bai_6_2.png)
+![Creator mBlock Bai 6 2](/ex/less06/image/200px-Creator_mBlock_Bai_6_2.png)
+
+#### Blocks Sprites
+
+##### Bat
+
+<img src="/ex/less06/image/spritesBat.png" width="339" height="100">
+
+##### Panda
+
+<img src="/ex/less06/image/spritesPanda.png" width="339" height="100">
 
 ### Giải thích code
 
@@ -95,9 +108,7 @@ Nhân vật Bat sẽ thông báo cho bạn biết trạng thái hiện tại c�
 
 ### Kết quả
 
-Sau khi đã nạp code thành công ...
-
-![hình dự án hoạt động](project_image.png)
+<https://github.com/user-attachments/assets/13c292ce-dc1e-47d1-b5df-8f750ff0c515>
 
 ## Bài tập thêm
 
