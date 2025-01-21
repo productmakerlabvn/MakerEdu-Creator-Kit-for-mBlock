@@ -49,15 +49,15 @@ Ta dùng còi để phát các note nhạc đó. Mình sẽ chọn ra 7 note nh�
 
 ##### Bat
 
-<img src="/ex/less10/image/spritesBat.png" width="338" height="100">
+<img src="/ex/less10/image/spritesBat.png" width="339" height="100">
 
 ##### Fox
 
-<img src="/ex/less10/image/spritesFox.png" width="338" height="100">
+<img src="/ex/less10/image/spritesFox.png" width="339" height="100">
 
 ##### Panda
 
-<img src="/ex/less10/image/spritesPanda.png" width="338" height="100">
+<img src="/ex/less10/image/spritesPanda.png" width="339" height="100">
 
 ### Giải thích code
 
