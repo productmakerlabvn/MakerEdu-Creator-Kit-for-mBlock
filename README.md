@@ -4,7 +4,7 @@
 
 ![](/image/01_1050px-MakerEdu_Creator_Kit_for_mBlock.png)
 
-Bộ MakerEdu Creator Kit for mBlock được xây dựng dựa trên mạch MakerEdu Creator và phần mềm lập trình mBlock dưới dạng kéo thả khối tương tự như Scratch, thích hợp cho các bạn muốn tìm hiểu về lập trình phần cứng Robotics nhưng chưa có kỹ năng về các ngôn ngữ lập trình phức tạp (như lập trình C). Đây cũng có thể coi như một bộ "đồ chơi" để rèn luyện tư duy logic thông qua việc lập trình các hệ thống tự động với các thao tác vô cùng đơn giản trên phần cứng Robotics của MakerEdu thiết kế giúp kết nối dễ dàng chỉ cắm và chạy (plug n play).
+Bộ MakerEdu Creator Kit for mBlock được xây dựng dựa trên mạch MakerEdu Creator và phần mềm lập trình mBlock dưới dạng kéo thả khối tương tự như Scratch, thích hợp cho các bạn muốn tìm hiểu về lập trình phần cứng Robotics nhưng chưa có kỹ năng về các ngôn ngữ lập trình phức tạp (như lập trình C). Đây cũng có thể coi như một bộ "đồ chơi" để rèn luyện tư duy logic thông qua việc lập trình các hệ thống tự động với các thao tác vô cùng đơn giản trên phần cứng Robotics của MakerEdu thiết kế giúp kết nối dễ dàng chỉ cắm và chạy (plug and play).
 
 ## Danh sách linh kiện
 
