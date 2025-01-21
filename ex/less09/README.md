@@ -56,11 +56,11 @@ Trong bài này, bạn sẽ học cách tạo các khối nhạc của riêng m�
 
 ##### Bear
 
-![spritesBear](/ex/less09/image/spritesBear.png)
+<img src="/ex/less09/image/spritesBear.png" width="339" height="100">
 
 ##### Bird
 
-![spritesBird](/ex/less09/image/spritesBird.png)
+<img src="/ex/less09/image/spritesBird.png" width="339" height="100">
 
 ### Giải thích code
 
