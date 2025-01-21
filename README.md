@@ -44,8 +44,6 @@ MakerLab có mở các Workshop "Hướng dẫn lập trình Robotics cho trẻ 
 - [Bài 9: Phát nhạc với với còi Buzzer](/ex/less09/README.md)
 - [Bài 10: Đàn Piano không chạm](/ex/less10/README.md)
 
-## Lời giải các bài tập thực hành
-
 ## Liên hệ
 
 Mọi thắc mắc xin liên hệ Facebook [**"MakerLab.vn RnD"**](https://www.facebook.com/makerlabvn) hoặc Nhóm [**"Maker DIY Vietnam"**](https://www.facebook.com/groups/makervn/).
