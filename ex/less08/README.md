@@ -95,9 +95,7 @@ Bên trong khối **[forever]**:
 ### Kết quả
 
 
-
-https://github.com/user-attachments/assets/fa75f79f-149a-429b-a36a-2d347cc569f5
-
+https://github.com/user-attachments/assets/5015d2d4-47a6-4885-8533-b3a54064abc9
 
 
 ## Bài tập thêm
