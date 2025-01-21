@@ -50,7 +50,15 @@ Trong bài này, bạn sẽ học cách tạo các khối nhạc của riêng m�
 ![Creator mBlock Bai 9 2](/ex/less09/image/525px-Creator_mBlock_Bai_9_2.png)
 ![Creator mBlock Bai 9 3](/ex/less09/image/525px-Creator_mBlock_Bai_9_3.png)
 ![Creator mBlock Bai 9 4](/ex/less09/image/525px-Creator_mBlock_Bai_9_4.png)
+
+#### Blocks Sprites
+
+##### Bear
+
 ![spritesBear](/ex/less09/image/spritesBear.png)
+
+##### Bird
+
 ![spritesBird](/ex/less09/image/spritesBird.png)
 
 ### Giải thích code

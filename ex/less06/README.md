@@ -53,7 +53,17 @@ Trên mạch MakerEdu Creator bạn tìm đến cụm chân cắm Servo có 3 m�
 #### Blocks Devices
 
 ![Creator mBlock Bai 6 1](/ex/less06/image/825px-Creator_mBlock_Bai_6_1.png)
-![](/ex/less06/image/200px-Creator_mBlock_Bai_6_2.png)
+![Creator mBlock Bai 6 2](/ex/less06/image/200px-Creator_mBlock_Bai_6_2.png)
+
+#### Blocks Sprites
+
+##### Bat
+
+![spritesBat](/ex/less06/image/spritesBat.png)
+
+##### Panda
+
+![spritesPanda](/ex/less06/image/spritesPanda.png)
 
 ### Giải thích code
 
@@ -97,9 +107,7 @@ Nhân vật Bat sẽ thông báo cho bạn biết trạng thái hiện tại c�
 
 ### Kết quả
 
-
-https://github.com/user-attachments/assets/13c292ce-dc1e-47d1-b5df-8f750ff0c515
-
+<https://github.com/user-attachments/assets/13c292ce-dc1e-47d1-b5df-8f750ff0c515>
 
 ## Bài tập thêm
 

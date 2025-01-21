@@ -43,8 +43,19 @@ Ta dùng còi để phát các note nhạc đó. Mình sẽ chọn ra 7 note nh�
 #### Blocks Devices
 
 ![Creator mBlock Bai 10 1](/ex/less10/image/825px-Creator_mBlock_Bai_10.png)
+
+#### Blocks Sprites
+
+##### Bat
+
 ![spritesBat](/ex/less10/image/spritesBat.png)
+
+##### Fox
+
 ![spritesFox](/ex/less10/image/spritesFox.png)
+
+##### Panda
+
 ![spritesPanda](/ex/less10/image/spritesPanda.png)
 ### Giải thích code
 

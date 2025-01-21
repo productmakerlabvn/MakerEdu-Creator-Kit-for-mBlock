@@ -44,7 +44,14 @@ Sẽ có 3 mức cảnh báo từ "Chú ý" đến "Cảnh báo" và cuối cùn
 
 ![Creator mBlock Bai 7](/ex/less07/image/825px-Creator_mBlock_Bai_7.png)
 
+#### Blocks Sprites
+
+##### Bat
+
 ![spritesBat](/ex/less07/image/spritesBat.png)
+
+##### Panda
+
 ![spritesPanda](/ex/less07/image/spritesPanda.png)
 
 ### Giải thích code

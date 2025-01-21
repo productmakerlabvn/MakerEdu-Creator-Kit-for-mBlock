@@ -23,11 +23,12 @@ Với tính năng này các bạn có thể sử dụng cho nhiều ứng dụng
 
 ### Chuẩn bị trước dự án
 
-- Tải và cài đặt phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Driver, cấu hình cho Mạch MakerEdu Creator trên phần mềm mBlock theo hướng dẫn **[tại đây]**.
-- Tải và cài đặt Extension MakerEdu Hardware trên phần mềm mblock theo hướng dẫn **[tại đây]**.
+[Hướng dẫn nạp chương trình & cài đặt Extension trên mBlock với các phần cứng MakerEdu](https://github.com/makerlabvn/mBlock-MakerEdu-Creator)
+
 - Kết nối mạch MakerEdu Creator với máy tính qua cáp USB-C sẽ thấy đèn nguồn (PWR) trên mạch phát sáng.
-- Hiểu cấu trúc của một chương trình trên phầm mềm mBlock và **"ngôn ngữ lập trình kéo thả khối"** theo hướng dẫn **[tại đây]**.
+- Hiểu cấu trúc của một chương trình trên phần mềm mBlock và **"ngôn ngữ lập trình kéo thả khối"** theo hướng dẫn [tại đây](https://github.com/makerlabvn/mBlock-MakerEdu-Creator).
+
+![](/ex/less04/image/700px-Connect_MakerEdu_Creator_with_Computer_by_USB-C_cable.jpg)
 
 ### Sơ đồ kết nối
 
@@ -39,18 +40,22 @@ Với tính năng này các bạn có thể sử dụng cho nhiều ứng dụng
 ### Chương trình
 
 - [Download file code "Bai4.mblock".](/ex/less04/mBlock5/Bai4.mblock)
-- Mở phần mềm mBlock vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
-- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
-
-#### Blocks Devices:
-
-#### Blocks Devices:
+- Mở phần mềm mBlock, vào **[File]** chọn **[Open from your computer]** và mở file code bạn vừa tải về.
+- Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn [tại đây](https://github.com/makerlabvn/mBlock-MakerEdu-Creator).
 
 #### Blocks Devices
 
 ![Creator mBlock Bai 6 1](/ex/less06/image/825px-Creator_mBlock_Bai_6_1.png)
 ![Creator mBlock Bai 6 2](/ex/less06/image/200px-Creator_mBlock_Bai_6_2.png)
+
+#### Blocks Sprites
+
+##### Bat
+
 ![spritesBat](/ex/less06/image/spritesBat.png)
+
+##### Panda
+
 ![spritesPanda](/ex/less06/image/spritesPanda.png)
 
 ### Giải thích code
