@@ -81,8 +81,7 @@ Bên trong khối **[forever]**.
 ### Kết quả
 
 
-https://github.com/user-attachments/assets/05909f8c-8dc3-4dda-a92a-e3c2e6f119a9
-
+https://github.com/user-attachments/assets/47e56139-610d-4efa-82ab-e548ba682cc1
 
 
 ## Bài tập thêm
