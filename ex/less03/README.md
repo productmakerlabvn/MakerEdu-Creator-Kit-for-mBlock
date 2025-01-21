@@ -68,7 +68,8 @@ Chương trình hoạt động:
 
 ### Kết quả
 
-https://github.com/user-attachments/assets/4f3150e7-ae48-43ee-a24c-812d313f6532
+
+https://github.com/user-attachments/assets/83b55eee-9594-4ae6-83d6-4ab4c42cdec5
 
 
 ## Bài tập thêm
