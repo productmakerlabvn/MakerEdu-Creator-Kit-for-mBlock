@@ -57,7 +57,8 @@ Ta dùng còi để phát các note nhạc đó. Mình sẽ chọn ra 7 note nh�
 
 ##### Panda
 
-![spritesPanda](/ex/less10/image/spritesPanda.png)
+<img src="/ex/less10/image/spritesPanda.png" width="200" height="100">
+
 ### Giải thích code
 
 Vai trò của của biến **"level"**:
