@@ -39,9 +39,11 @@ Không chỉ làm bật tắt đèn LED, thiết bị này còn cho phép bạn 
 - Ghép nối các thiết bị theo sơ đồ kết nối và tiến hành nạp chương trình **[Upload]** theo hướng dẫn **[tại đây]**.
 
 #### Blocks Devices:
-
 ![Creator mBlock Bai 2](/ex/less02/image/Creator_mBlock_Bai_2.png)
+#### Blocks Sprites:
+##### Panda:
 ![spritesPanda](/ex/less02/image/spritesPanda.png)
+##### Bird:
 ![spritesBird](/ex/less02/image/spritesBird.png)
 
 ### Giải thích code
