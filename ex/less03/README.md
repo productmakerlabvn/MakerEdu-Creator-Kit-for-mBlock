@@ -55,15 +55,15 @@ Mỗi khi có ai đó tự ý mở hộc tủ của bạn, còi sẽ bật cản
 
 ##### Panda
 
-![spritesPanda](/ex/less03/image/spritesPanda.png)
+<img src="/ex/less03/image/spritesPanda.png" width="339" height="100">
 
 ##### Bird
 
-![spritesBird](/ex/less03/image/spritesBird.png)
+<img src="/ex/less03/image/spritesBird.png" width="339" height="100">
 
 ##### Sheep
 
-![spriteSheep](/ex/less03/image/spritesSheep.png)
+<img src="/ex/less03/image/spritesSheep.png" width="339" height="100">
 ### Giải thích code
 
 Chương trình hoạt động:

@@ -52,12 +52,11 @@ Với tính năng này các bạn có thể sử dụng cho nhiều ứng dụng
 
 ##### Bat
 
-![spritesBat](/ex/less06/image/spritesBat.png)
+<img src="/ex/less06/image/spritesBat.png" width="339" height="100">
 
 ##### Panda
 
-![spritesPanda](/ex/less06/image/spritesPanda.png)
-
+<img src="/ex/less06/image/spritesPanda.png" width="339" height="100">
 ### Giải thích code
 
 Chương trình hoạt động:

@@ -49,11 +49,11 @@ Sẽ có 3 mức cảnh báo từ "Chú ý" đến "Cảnh báo" và cuối cùn
 
 ##### Bat
 
-![spritesBat](/ex/less07/image/spritesBat.png)
+<img src="/ex/less07/image/spritesBat.png" width="339" height="100">
 
 ##### Panda
 
-![spritesPanda](/ex/less07/image/spritesPanda.png)
+<img src="/ex/less07/image/spritesPanda.png" width="339" height="100">
 
 ### Giải thích code
 

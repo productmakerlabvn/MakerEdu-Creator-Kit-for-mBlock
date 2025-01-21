@@ -47,11 +47,11 @@ Không chỉ làm bật tắt đèn LED, thiết bị này còn cho phép bạn 
 
 ##### Panda
 
-![spritesPanda](/ex/less02/image/spritesPanda.png)
+<img src="/ex/less02/image/spritesPanda.png" width="339" height="100">
 
 ##### Bird
 
-![spritesBird](/ex/less02/image/spritesBird.png)
+<img src="/ex/less02/image/spritesBird.png" width="339" height="100">
 
 ### Giải thích code
 

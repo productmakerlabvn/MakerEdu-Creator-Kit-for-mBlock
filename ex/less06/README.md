@@ -60,11 +60,11 @@ Trên mạch MakerEdu Creator bạn tìm đến cụm chân cắm Servo có 3 m�
 
 ##### Bat
 
-![spritesBat](/ex/less06/image/spritesBat.png)
+<img src="/ex/less06/image/spritesBat.png" width="339" height="100">
 
 ##### Panda
 
-![spritesPanda](/ex/less06/image/spritesPanda.png)
+<img src="/ex/less06/image/spritesPanda.png" width="339" height="100">
 
 ### Giải thích code
 

@@ -64,15 +64,15 @@ Trên mạch MakerEdu Creator bạn tìm đến cụm chân cắm Servo có 3 m�
 
 ##### Bear
 
-![spritesBear](/ex/less05/image/spritesBear.png)
+<img src="/ex/less05/image/spritesBear.png" width="339" height="100">
 
 ##### Bird
 
-![spritesBird](/ex/less05/image/spritesBird.png)
+<img src="/ex/less05/image/spritesBird.png" width="339" height="100">
 
 ##### Panda
 
-![spritesPanda](/ex/less05/image/spritesPanda.png)
+<img src="/ex/less05/image/spritesPanda.png" width="339" height="100">
 ### Giải thích code
 
 Chương trình hoạt động:
