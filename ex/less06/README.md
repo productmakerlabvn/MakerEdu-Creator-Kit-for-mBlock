@@ -98,7 +98,7 @@ Nhân vật Bat sẽ thông báo cho bạn biết trạng thái hiện tại c�
 ### Kết quả
 
 
-https://github.com/user-attachments/assets/3f12233d-4499-4a48-81a0-8a97669547a8
+https://github.com/user-attachments/assets/13c292ce-dc1e-47d1-b5df-8f750ff0c515
 
 
 ## Bài tập thêm
